@@ -35,7 +35,7 @@ On your local machine, prepare the solution in a new folder. Here enable and use
 
 - Fork this repository.
 - Clone your forked repo on your local machine.
-- Create a new branch with the following format: `<github-username>/week<num>`, e.g.: `karan/week1`
+- Create a new branch with the following format: `<github-username>/week<num>`, e.g.: `yashodeep/week1`
 - Create a directory in the respective week's directory with your github username as the name of the directory.
 - Code your solution in that directory only.
 - Create a README.md file. It must contain the following:

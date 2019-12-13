@@ -8,7 +8,7 @@ Ankit recently came 1st at a hackathon and now he wants to buy a new phone with 
 
 ## Next Steps
 
-Once you are done with the basic requirements, get creative! Try to scape the price of each of the phones at regular intervals and inform the user if there is a price drop via email/sms.
+Once you are done with the basic requirements, get creative! Try to scrape the price of each of the phones at regular intervals and inform the user if there is a price drop via email/sms.
 
 ## Resources
 

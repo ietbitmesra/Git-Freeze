@@ -31,8 +31,6 @@ Welcome to Git Freeze! Each week we will be providing you with a small project i
 
 ## Attempting Problems
 
-On your local machine, prepare the solution in a new folder. Here enable and use git to keep track of your files. Once your solution is prepared do the following:
-
 - Fork this repository.
 - Clone your forked repo on your local machine.
 - Create a new branch with the following format: `<github-username>/week<num>`, e.g.: `yashodeep/week1`

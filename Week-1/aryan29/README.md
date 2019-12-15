@@ -42,8 +42,11 @@ We get you the best price of mobile by making use of the websites like [Smartpri
 For Smartprix there is no need to get the code as well we can do that for you by a single click
 
 We Provide you with Emails and Telegram Messages whenever there is a price decerease in your products from the time when you checked it last(We check for decrease in Price in every 3 hours)   
-
+Example Image:-   
+![Price Change Updates](https://github.com/aryan29/Git-Freeze/blob/aryan29/week1/Week-1/aryan29/images/Screenshot_20191215-224146.png)
 We Provide you with Daily Emails and messages regarding whether your server is running or not if it is not Working you will not recive Email so you can switch it on   
+Example Image:-   
+![Server Running Update](https://github.com/aryan29/Git-Freeze/blob/aryan29/week1/Week-1/aryan29/images/Screenshot_20191215-224219.png)
 ## Contributing 
 Feel Free to Contribute and for any suggestions you can mail me at <nk28agra@gmail.com>
 ## License

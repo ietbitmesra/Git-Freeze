@@ -17,12 +17,15 @@ You can get smartprix code directly form your terminal
 python api.py -gc "Asus Zenfone Max Pro M1 6GB"
 ```
 You can use their website too to get the link
+
 As shown below:-    
 Getting Link from Smartprix    
 ![Getting Link from Smartprix](https://github.com/aryan29/Git-Freeze/blob/aryan29/week1/Week-1/aryan29/images/mysmartprixcode.png)    
 
 Getting Link from MySmartprice    
 ![Getting Link from MySmartprice](https://github.com/aryan29/Git-Freeze/blob/aryan29/week1/Week-1/aryan29/images/mysmartpricecode.png)
+=======
+As shown below:-
 ## Setting Up Server
 Setup comes with a file called keeptrack.py which you can run infiniely on your system for keep receiving regular updates for linux systems just run this command
 ```python
@@ -38,15 +41,21 @@ We get you the JSON of features Any Number of Mobiles in just  a single Click
 Example JSON file Generated    
 ![Example JSON file Generated](https://github.com/aryan29/Git-Freeze/blob/aryan29/week1/Week-1/aryan29/images/data(json).png)
 We get you the best price of mobile by making use of the websites like [Smartprix](https://www.smartprix.com/) and [MySmartPrice](https://www.mysmartprice.com/) which compares price of mobile from various stores like Amazon,Flipkart,Ebay,Shopclues and various others   
+We get you the JSON of features Any Number of Mobiles in just  a single Click   
+
+We get you the best price of mobile by making use of the websites like [https://www.smartprix.com/](https://www.smartprix.com/) and [https://www.mysmartprice.com/](https://www.mysmartprice.com/) which compares price of mobile from various stores like Amazon,Flipkart,Ebay,Shopclues and various others   
 
 For Smartprix there is no need to get the code as well we can do that for you by a single click
 
 We Provide you with Emails and Telegram Messages whenever there is a price decerease in your products from the time when you checked it last(We check for decrease in Price in every 3 hours)   
+
 Example Image:-   
 ![Price Change Updates](https://github.com/aryan29/Git-Freeze/blob/aryan29/week1/Week-1/aryan29/images/Screenshot_20191215-224146.png)
 We Provide you with Daily Emails and messages regarding whether your server is running or not if it is not Working you will not recive Email so you can switch it on   
 Example Image:-   
 ![Server Running Update](https://github.com/aryan29/Git-Freeze/blob/aryan29/week1/Week-1/aryan29/images/Screenshot_20191215-224219.png)
+
+We Provide you with Daily Emails and messages regarding whether your server is running or not if it is not Working you will not recive Email so you can switch it on   
 ## Contributing 
 Feel Free to Contribute and for any suggestions you can mail me at <nk28agra@gmail.com>
 ## License

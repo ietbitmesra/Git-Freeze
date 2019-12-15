@@ -17,8 +17,11 @@ You can get smartprix code directly form your terminal
 python api.py -gc "Asus Zenfone Max Pro M1 6GB"
 ```
 You can use their website too to get the link
-As shown below:-
-![Getting Link from Smartprix](https://github.com/aryan29/Git-Freeze/blob/aryan29/week1/Week-1/aryan29/images/mysmartprixcode.png)
+As shown below:-    
+Getting Link from Smartprix    
+![Getting Link from Smartprix](https://github.com/aryan29/Git-Freeze/blob/aryan29/week1/Week-1/aryan29/images/mysmartprixcode.png)    
+
+Getting Link from MySmartprice    
 ![Getting Link from MySmartprice](https://github.com/aryan29/Git-Freeze/blob/aryan29/week1/Week-1/aryan29/images/mysmartpricecode.png)
 ## Setting Up Server
 Setup comes with a file called keeptrack.py which you can run infiniely on your system for keep receiving regular updates for linux systems just run this command
@@ -30,7 +33,9 @@ And for Windows try
 Remeber to restart the service each time you reboot or try adding a new cronjob or use any of the ways mentioned on [this](https://stackoverflow.com/questions/24518522/run-python-script-at-startup-in-ubuntu/25805871) link   
 Windows user can make use of Microsoft Task Scheduler to do the Same    
 ## Features
-We get you the JSON of features Any Number of Mobiles in just  a single Click   
+We get you the JSON of features Any Number of Mobiles in just  a single Click    
+
+Example JSON file Generated    
 ![Example JSON file Generated](https://github.com/aryan29/Git-Freeze/blob/aryan29/week1/Week-1/aryan29/images/data(json).png)
 We get you the best price of mobile by making use of the websites like [Smartprix](https://www.smartprix.com/) and [MySmartPrice](https://www.mysmartprice.com/) which compares price of mobile from various stores like Amazon,Flipkart,Ebay,Shopclues and various others   
 

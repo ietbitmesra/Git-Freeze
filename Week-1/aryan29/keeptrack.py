@@ -6,6 +6,11 @@ from api import Api
 dateIndex=datetime.now()
 with open("user_config.json","r") as f:
     conf=json.load(f)
+
+    if(conf["sender_email"]=="" or conf["sender_password"]=="" or len(conf["receiver_email"])==0):
+        print("Please Make sure to Enter Sender_Email, Receiver_Email and Sender_Password for Gmail before continuing")
+        exit(0)
+
 def keeptrack():
     with open("data.json","r") as f:
         obj=json.load(f)
@@ -57,4 +62,6 @@ if __name__ == "__main__":
         keeptrack()
         if(c%8==1):
             checkserver()    #1day updates
+
+        time.sleep(updation_time)
         time.sleep(updation_time)

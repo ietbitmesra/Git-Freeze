@@ -39,5 +39,4 @@ class TrackPrice:
             server.sendmail(self.config['Emails']['sender email'], self.config['Emails']['receiver email'], message.encode("utf8"))
 
 
-trackprice = TrackPrice()
-trackprice.low_price()
+TrackPrice().low_price()

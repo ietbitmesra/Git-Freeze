@@ -42,5 +42,4 @@ class Spec:
         return config
 
 
-spec = Spec()
-spec.save_json()
+Spec().save_json()

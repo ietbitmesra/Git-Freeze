@@ -85,4 +85,17 @@ if __name__ == "__main__":
         elif(sys.argv[1]=='-h'):
             print(" -j -> Gets you a json file of Mobiles\n","-gc [Mobile Name]-> Gets you Smartprix Code for a particular Mobile\n","-h -> Help Menu\n")
     else:
+<<<<<<< HEAD
         print("Invalid Command -h for help")
+=======
+        print("Invalid Command -h for help")
+    if(sys.argv[1]=='-j'):
+        Api().organize()
+    elif(sys.argv[1]=='-gc'):
+        if(sys.argv[2]==''):
+            print("Enter a valid mobile name enter -h for help")
+        else:
+            Api().get_smartprix_code(sys.argv[2])
+    elif(sys.argv[1]=='-h'):
+        print(" -j -> Gets you a json file of Mobiles\n","-gc [Mobile Name]-> Gets you Smartprix Code for a particular Mobile\n","-h -> Help Menu\n")
+>>>>>>> 5da521f7a52ea4ba66e88db9a6a51aa9d236feea

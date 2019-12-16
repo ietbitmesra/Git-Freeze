@@ -4,6 +4,9 @@ import sys
 import json
 with open("user_config.json","r") as f:
     conf=json.load(f)
+    if(len(conf["mob"])==0):
+        print("Please Configure your user_config.json file and add Code of Atleast 1 mobile Phone to generate json")
+        exit(0)
 class Api:
     def get_data(self,mob):
         b=requests.get(f"https://www.smartprix.com/mobiles/{mob[0]}")
@@ -71,12 +74,15 @@ class Api:
         st=sel[0]['href']
         print("Smartprix Code -> ",st[st.find("mobiles/")+8:])
 if __name__ == "__main__":
-    if(sys.argv[1]=='-j'):
-        Api().organize()
-    elif(sys.argv[1]=='-gc'):
-        if(sys.argv[2]==''):
-            print("Enter a valid mobile name enter -h for help")
-        else:
-            Api().get_smartprix_code(sys.argv[2])
-    elif(sys.argv[1]=='-h'):
-        print(" -j -> Gets you a json file of Mobiles\n","-gc [Mobile Name]-> Gets you Smartprix Code for a particular Mobile\n","-h -> Help Menu\n")
+    if(len(sys.argv)>1):
+        if(sys.argv[1]=='-j'):
+            Api().organize()
+        elif(sys.argv[1]=='-gc'):
+            if(sys.argv[2]==''):
+                print("Enter a valid mobile name enter -h for help")
+            else:
+                Api().get_smartprix_code(sys.argv[2])
+        elif(sys.argv[1]=='-h'):
+            print(" -j -> Gets you a json file of Mobiles\n","-gc [Mobile Name]-> Gets you Smartprix Code for a particular Mobile\n","-h -> Help Menu\n")
+    else:
+        print("Invalid Command -h for help")

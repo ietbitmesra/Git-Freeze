@@ -55,7 +55,7 @@ To get notified on price drops configure the sender email and enable permission 
 
 ## Contributing
 
-Feel free to make a pull requests or email me at <ishaang12@gmail.com>.
+Feel free to make a pull request or email me at <ishaang12@gmail.com>.
 
 ## Author
 

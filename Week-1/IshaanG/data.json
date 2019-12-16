@@ -1,0 +1,26 @@
+[
+    {
+        "Name": "Apple iPhone 11",
+        "Price": "₹63,999",
+        "Connectivity": "Dual Sim, 3G, 4G, VoLTE, Wi-Fi, NFC",
+        "Processor": "A13 Bionic, Hexa Core, 2.65GHz Processor",
+        "Memory": "4GB RAM, 64GB inbuilt",
+        "Battery": "3110mAh Battery",
+        "Display": "6.1 inches, 828x1792px Display with Large Notch",
+        "Camera": "12MP + 12MP Dual Rear & 12MP Front Camera",
+        "External Storage": "Memory Card Not Supported",
+        "Operating System": "iOS v13"
+    },
+    {
+        "Name": "OnePlus 7T Pro",
+        "Price": "₹53,999",
+        "Connectivity": "Dual Sim, 3G, 4G, VoLTE, Wi-Fi, NFC",
+        "Processor": "Snapdragon 855+, Octa Core, 2.96GHz Processor",
+        "Memory": "8GB RAM, 256GB inbuilt",
+        "Battery": "4085mAh Battery with Fast Charging ",
+        "Display": "6.67 inches, 1440x3120px Display",
+        "Camera": "48MP + 16MP + 8MP Triple Rear & 16MP Front Camera",
+        "External Storage": "Memory Card Not Supported",
+        "Operating System": "Android v10.0"
+    }
+]

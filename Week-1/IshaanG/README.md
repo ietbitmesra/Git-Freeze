@@ -20,20 +20,20 @@ To avoid having to give root permission it is advised to install in a virtual en
 
 Modify the config.ini file as desired taking care of the section headers.
 
-
-    # List the mobiles phones to get the information and track prices
-    [Mobile Phones]
-    iPhone 11
-    OnePlus 7T Pro
-    # Provide email for price drop alerts
-    [Emails]
-    sender email = test@gmail.com # You need to enable permission for less secure apps for the sender gmail account
-    sender password = abc123
-    receiver email = pqr@123.com
-    # Other settings
-    [Settings]
-    polling frequency = 60 # Frequency in seconds to check for the lowest prices 
-
+```ini
+# List the mobiles phones to get the information and track prices
+[Mobile Phones]
+iPhone 11
+OnePlus 7T Pro
+# Provide email for price drop alerts
+[Emails]
+sender email = test@gmail.com # You need to enable permission for less secure apps for the sender gmail account
+sender password = abc123
+receiver email = pqr@123.com
+# Other settings
+[Settings]
+polling frequency = 60 # Frequency in seconds to check for the lowest prices 
+```
 
 Run the spec.py file to generate the JSON in data.json.
 

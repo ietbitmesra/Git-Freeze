@@ -40,6 +40,6 @@ Make sure that every word in the smartphone's name is seperated by a `-` ( hyphe
 
 ### What It Does?
 
-The only inputs the application takes from the user are the names of the smartphones the user wants to compare. The application scrapes data about the specifications of the two phones from GadgetsNow and stores it into **specifications.json**. Then it checks for price drops regularly after every 2 minutes. If there is a drop in price then it sends an email to the user about the price drop which also contains the url to the website. The application is not limited to any particular smartphone, the user can select any two smartphone of their choice.
+The only inputs the application takes from the user are the names of the smartphones the user wants to compare. The application scrapes data about the specifications of the two phones from GadgetsNow and creates a new file **specifications.json** and stores the specifications into it. Then it checks for price drops regularly after every 2 minutes. If there is a drop in price then it sends an email to the user about the price drop which also contains the url to the website. The application is not limited to any particular smartphone, the user can select any two smartphone of their choice.
  
  

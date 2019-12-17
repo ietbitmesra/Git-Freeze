@@ -27,7 +27,7 @@ class PhoneDetails:
                     print('Wrong URL!! Enter correct URL:')
             except:
                 print('Wrong URL!! Enter correct URL:')  
-
+        self.URL = URL
         URLlist.append(URL)
 
         return page 
@@ -43,6 +43,7 @@ class PhoneDetails:
         # scraping the details and making dictionary.
         self.phone_name = phone_name
         dictionary ={}
+        dictionary['URL'] = self.URL
         for i in range(len(features)):
             feature = features[i].text.replace("\n", "").strip()
             value = values[i].text.replace("\n", "").strip()
@@ -152,7 +153,7 @@ class PhoneDetails:
             print("Emails sent")
             server.close()
         except:
-            print('wrong email/password: Please try again..')
+            print('wrong email/password: Please try again with correct credentials.')
             exit(0)
 
 
@@ -174,7 +175,7 @@ class PhoneDetails:
         elif PREV_MIN_PRICE > MIN_PRICE:
             print('Price has decreased')
             msg = f"Price has decreased from Rs. {PREV_MIN_PRICE} to Rs. {MIN_PRICE}\n\
-                which is of {lowest_priced_phone} on {lowest_priced_store} as of {datetime.now} ."
+                which is of {lowest_priced_phone} on {lowest_priced_store} as of {datetime.now()} ."
             self.phone_desktop_notify(msg)
             self.email_notify(msg)
             PREV_MIN_PRICE = MIN_PRICE
@@ -186,6 +187,7 @@ if __name__ == "__main__":
 
     no_of_urls = int(input("Enter the number of phones you want to track:"))
     # variables assigned
+
     MIN_PRICE = 1000000
     lowest_priced_store = ''
     lowest_priced_phone = ''
@@ -217,7 +219,7 @@ if __name__ == "__main__":
         MIN_PRICE, lowest_priced_store, lowest_priced_phone =\
         phone_details.check_price(MIN_PRICE,lowest_priced_store,\
             lowest_priced_phone)
-
+        
         PREV_MIN_PRICE = phone_details.price_comparator(MIN_PRICE, lowest_priced_store,\
              lowest_priced_phone, PREV_MIN_PRICE)   
         print(f"Lowest Price is of {lowest_priced_phone} at Rs. {MIN_PRICE} on {lowest_priced_store}\n \

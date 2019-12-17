@@ -178,14 +178,14 @@ async function sendMail(message) {
         secure: true,
         port: 465,
         auth: {
-            user: 'YOUR EMAIL',
-            pass: "SENDER'S PASSWORD"
+            user: "SENDER'S EMAIL",         //Replace with sender's email
+            pass: "SENDER'S PASSWORD"       //Replace with sender's password
         }
     });
 
     var mailOptions = {
-        from: "SENDER'S EMAIL",
-        to: "RECIEVER'S EMAIL",
+        from: "SENDER'S EMAIL",             //Replace with sender's email
+        to: "RECIEVER'S EMAIL",             //Replace with reciever's email
         subject: "Price drops in smartphones",
         text: message
     };

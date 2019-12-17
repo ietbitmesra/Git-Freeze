@@ -1,11 +1,12 @@
 import requests
 import bs4
 import sys
+from termcolor import colored,cprint
 import json
 with open("user_config.json","r") as f:
     conf=json.load(f)
     if(len(conf["mob"])==0):
-        print("Please Configure your user_config.json file and add Code of Atleast 1 mobile Phone to generate json")
+        cprint("Please Configure your user_config.json file and add Code of Atleast 1 mobile Phone to generate json",'red')
         exit(0)
 class Api:
     def get_data(self,mob):
@@ -56,7 +57,7 @@ class Api:
             m=self.get_data(mob)
             j=self.name_data(m,mob)
             self.generate_json(j)
-        print("Json File successfull generated Do you want to Receive Price Updates on this email?(y/n)")
+        cprint("Json File successfull generated Do you want to Receive Price Updates on this email?(y/n)",'yellow')
         res=input()
         if(res=="Y" or res=="y"):
             email=input("Enter your Email")
@@ -64,38 +65,28 @@ class Api:
             data=conf
             with open("user_config.json","w") as f:
                 json.dump(data,f,indent=4)
-                print("We added your email successfully")
+                cprint("We added your email successfully",'green')
         else:
-            print("Thanks for using us")
+            cprint("Thanks for using us",'magenta')
     def get_smartprix_code(self,mob_name):
         q=requests.get(f"https://www.smartprix.com/products/?q={mob_name}")
         s=bs4.BeautifulSoup(q.text,'lxml')
         sel=s.select(".f-mobiles:nth-child(1) h2 a")
         st=sel[0]['href']
-        print("Smartprix Code -> ",st[st.find("mobiles/")+8:])
+        x=st[st.find("mobiles/")+8:]
+        cprint(f"Smartprix Code -> {x}",'magenta')
 if __name__ == "__main__":
     if(len(sys.argv)>1):
         if(sys.argv[1]=='-j'):
             Api().organize()
         elif(sys.argv[1]=='-gc'):
             if(sys.argv[2]==''):
-                print("Enter a valid mobile name enter -h for help")
+                cprint("Enter a valid mobile name enter -h for help",'cyan')
             else:
                 Api().get_smartprix_code(sys.argv[2])
         elif(sys.argv[1]=='-h'):
-            print(" -j -> Gets you a json file of Mobiles\n","-gc [Mobile Name]-> Gets you Smartprix Code for a particular Mobile\n","-h -> Help Menu\n")
-    else:
-<<<<<<< HEAD
-        print("Invalid Command -h for help")
-=======
-        print("Invalid Command -h for help")
-    if(sys.argv[1]=='-j'):
-        Api().organize()
-    elif(sys.argv[1]=='-gc'):
-        if(sys.argv[2]==''):
-            print("Enter a valid mobile name enter -h for help")
+            cprint(" -j -> Gets you a json file of Mobiles\n","-gc [Mobile Name]-> Gets you Smartprix Code for a particular Mobile\n","-h -> Help Menu\n",'cyan')
         else:
-            Api().get_smartprix_code(sys.argv[2])
-    elif(sys.argv[1]=='-h'):
-        print(" -j -> Gets you a json file of Mobiles\n","-gc [Mobile Name]-> Gets you Smartprix Code for a particular Mobile\n","-h -> Help Menu\n")
->>>>>>> 5da521f7a52ea4ba66e88db9a6a51aa9d236feea
+            cprint("Enter a valid mobile name enter -h for help",'cyan')
+    else:
+        cprint("Invalid Command -h for help",'red')

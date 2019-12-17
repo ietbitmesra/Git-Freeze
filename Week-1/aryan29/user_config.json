@@ -1,9 +1,9 @@
 {
-    "sender_email": "mymail@gmail.com",
-    "sender_password": "****",
+    "sender_email": "admin@gmail.com",
+    "sender_password": "password",
     "receiver_email": [
         "aaa@gmail.com",
-        "nk25agra@gmail.com"
+        "bbb@gmail.com"
     ],
     "telegram_bot_token": "",
     "telegram_chatID": "",

@@ -56,6 +56,12 @@ Example Image:-
 ![Server Running Update](https://github.com/aryan29/Git-Freeze/blob/aryan29/week1/Week-1/aryan29/images/Screenshot_20191215-224219.png)
 
 We Provide you with Daily Emails and messages regarding whether your server is running or not if it is not Working you will not recive Email so you can switch it on   
+
+## Updates
+Added a smart feature to directly compare 2 phones on basis of their spec score just use
+```python
+python api.py -cm "Asus Zenfone Max Pro M1" "Redmi Mi A2"
+```
 ## Contributing 
 Feel Free to Contribute and for any suggestions you can mail me at <nk28agra@gmail.com>
 ## License

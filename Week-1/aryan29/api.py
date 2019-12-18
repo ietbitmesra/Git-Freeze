@@ -69,23 +69,41 @@ class Api:
         else:
             cprint("Thanks for using us",'magenta')
     def get_smartprix_code(self,mob_name):
+        print(mob_name)
         q=requests.get(f"https://www.smartprix.com/products/?q={mob_name}")
         s=bs4.BeautifulSoup(q.text,'lxml')
         sel=s.select(".f-mobiles:nth-child(1) h2 a")
         st=sel[0]['href']
         x=st[st.find("mobiles/")+8:]
         cprint(f"Smartprix Code -> {x}",'magenta')
+    def smart_compare(self,mob1,mob2):
+        q1=requests.get(f"https://www.smartprix.com/products/?q={mob1}")
+        q2=requests.get(f"https://www.smartprix.com/products/?q={mob2}")
+        s1=bs4.BeautifulSoup(q1.text,'lxml')
+        sel1=s1.select(".f-mobiles:nth-child(1) .score-val")[0]
+        s2=bs4.BeautifulSoup(q2.text,'lxml')
+        sel2=s2.select(".f-mobiles:nth-child(1) .score-val")[0]
+        #print(sel2,sel1)
+        if(int(sel2.text)>int(sel1.text)):
+            mob1,mob2=mob2,mob1
+        cprint(f"{mob1} is better than {mob2} comparing all the features",'cyan')
+
 if __name__ == "__main__":
     if(len(sys.argv)>1):
         if(sys.argv[1]=='-j'):
             Api().organize()
         elif(sys.argv[1]=='-gc'):
-            if(sys.argv[2]==''):
+            if(len(sys.argv)!=3):
                 cprint("Enter a valid mobile name enter -h for help",'cyan')
             else:
                 Api().get_smartprix_code(sys.argv[2])
+        elif(sys.argv[1]=='-cm'):
+            if(len(sys.argv)!=4):
+                cprint("Enter a valid mobile name enter -h for help",'cyan')
+            else:
+                Api().smart_compare(sys.argv[2],sys.argv[3])
         elif(sys.argv[1]=='-h'):
-            cprint(" -j -> Gets you a json file of Mobiles\n","-gc [Mobile Name]-> Gets you Smartprix Code for a particular Mobile\n","-h -> Help Menu\n",'cyan')
+            cprint("-j -> Gets you a json file of Mobiles\n"+"-gc [Mobile Name]-> Gets you Smartprix Code for a particular Mobile\n"+"-cm [Mobile 1] [Mobie 2] to compare phones on basis of their spec score\n"+"-h -> Help Menu\n",'cyan')
         else:
             cprint("Enter a valid mobile name enter -h for help",'cyan')
     else:

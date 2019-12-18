@@ -1,0 +1,81 @@
+[
+    {
+        "Phone1": "apple-iphone-11",
+        "Phone2": "oneplus-7T-pro"
+    },
+    {
+        "Feature": "Price",
+        "Phone1": "₹ 64,900",
+        "Phone2": "₹ 53,999"
+    },
+    {
+        "Feature": "ram",
+        "Phone1": "4 GB",
+        "Phone2": "8 GB"
+    },
+    {
+        "Feature": "front camera",
+        "Phone1": "12 MP",
+        "Phone2": "16 MP"
+    },
+    {
+        "Feature": "processor",
+        "Phone1": "Apple A13 Bionic",
+        "Phone2": "Qualcomm Snapdragon 855 Plus"
+    },
+    {
+        "Feature": "rear camera",
+        "Phone1": "12 MP + 12 MP",
+        "Phone2": "48 MP + 16 MP + 8 MP"
+    },
+    {
+        "Feature": "operating system",
+        "Phone1": "iOS v13.0",
+        "Phone2": "Android v10 (Q)"
+    },
+    {
+        "Feature": "chipset",
+        "Phone1": "Apple A13 Bionic",
+        "Phone2": "Qualcomm Snapdragon 855 Plus"
+    },
+    {
+        "Feature": "graphics",
+        "Phone1": "Apple GPU (four-core graphics)",
+        "Phone2": "Adreno 640"
+    },
+    {
+        "Feature": "internal memory",
+        "Phone1": "64 GB",
+        "Phone2": "256 GB"
+    },
+    {
+        "Feature": "camera features",
+        "Phone1": "5 x Digital Zoom, 2 x Optical Zoom, Auto Flash, Face detection, Touch to focus",
+        "Phone2": "Fixed Focus"
+    },
+    {
+        "Feature": "wifi",
+        "Phone1": "Wi-Fi 802.11, a/ac/ax/b/g/n/n 5GHz, MIMO",
+        "Phone2": "Wi-Fi 802.11, a/ac/b/g/n/n 5GHz, MIMO"
+    },
+    {
+        "Feature": "wifi features",
+        "Phone1": "Mobile Hotspot",
+        "Phone2": "Mobile Hotspot"
+    },
+    {
+        "Feature": "bluetooth",
+        "Phone1": "v5.0",
+        "Phone2": "v5.0"
+    },
+    {
+        "Feature": "usb connectivity",
+        "Phone1": "USB 2.0",
+        "Phone2": "Mass storage device, USB charging"
+    },
+    {
+        "Feature": "network support",
+        "Phone1": "4G (supports Indian bands), 3G, 2G",
+        "Phone2": "4G (supports Indian bands), 3G, 2G"
+    }
+]

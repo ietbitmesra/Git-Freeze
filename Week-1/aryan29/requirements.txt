@@ -3,13 +3,10 @@ beautifulsoup4==4.8.1
 bs4==0.0.1
 certifi==2019.11.28
 chardet==3.0.4
-Click==7.0
 cssselect==1.1.0
 fake-useragent==0.1.11
-Flask==1.1.1
 idna==2.8
 itsdangerous==1.1.0
-Jinja2==2.10.3
 lxml==4.4.2
 MarkupSafe==1.1.1
 parse==1.12.1
@@ -21,6 +18,7 @@ requests-html==0.10.0
 six==1.13.0
 soupsieve==1.9.5
 telegram==0.0.1
+termcolor==1.1.0
 tqdm==4.40.2
 urllib3==1.25.7
 w3lib==1.21.0

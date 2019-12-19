@@ -30,10 +30,12 @@ It will run your server in the background infinitely.
 To stop the server first find the process id(PID) of the process running using the pgrep command.
 Then kill the process.
 ```
-pgrep -a python3
+$ pgrep -a python3
 $ kill <PID>
 ```
+## Screenshots
 
+![Screenshot of the updates](./images/updates.png)
 ![Screenshot of the mail](./images/img.jpeg)
 
 ## Contributions

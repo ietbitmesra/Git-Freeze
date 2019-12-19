@@ -11,26 +11,30 @@ import httplib2
 
 with open("config.json","r") as f:
     config = json.load(f)
+MIN_PRICE = 1000000
+lowest_priced_store = ''
+PREV_MIN_PRICE = MIN_PRICE
+count = 1
 
-class PhoneDetails:
+class PhoneDetails():
 
     # checking if URL is correct
-    def check_url(self):
-        
-        while True:
-            URL = input(f"Enter the URL {i+1} from 91mobiles.com only (for better results):\n")
-            try:
-                page = requests.get(URL)
-                if page.status_code ==200:
-                    break
-                else:
-                    print('Wrong URL!! Enter correct URL:')
-            except:
-                print('Wrong URL!! Enter correct URL:')  
+    def check_url(self,url):
+       
+        if len(url) == 0:
+            URL = input(f"Enter the URL from 91mobiles.com only (for better results):\n")
+        else:
+            URL = url
+        try:
+            page = requests.get(URL)
+            if page.status_code ==200:
+                print("Correct URL")
+            else:
+                print('Wrong URL!! Enter correct URL:')
+        except:
+            print('Wrong URL!! Enter correct URL:')  
         self.URL = URL
-        URLlist.append(URL)
-
-        return page 
+        self.scraping_site(page) 
         
         
     def scraping_site(self, page):
@@ -67,32 +71,10 @@ class PhoneDetails:
             dictionary['prices'][store] = price
 
         jsonstr = json.dumps(dictionary,sort_keys=True,indent=4)
-        return jsonstr
-
-    # checking current prices at different sites .
-    def check_price(self, MIN_PRICE, lowest_priced_store, lowest_priced_phone):
-        for i in range(len(URLlist)):
-            
-            page = requests.get(URLlist[i])
-            soup = BeautifulSoup(page.content, 'html.parser')
-            prices = soup.find_all("span", {"class":"prc"})
-            phone_name = soup.find("span", {"itemprop":"name"}).get_text()
-            stores = soup.find_all("img", {"class":"img_alt"})
-            
-            for j in range(len(prices)):
-                store = stores[j]['alt']
-                price = prices[j].get_text().replace("\n","")
-                price = int(price[price.find(' ')+1:-3].replace(",",""))
-                # checking the minimum price.
-                if price < MIN_PRICE :
-                    MIN_PRICE = price
-                    lowest_priced_store = store
-                    lowest_priced_phone = phone_name
-            
-        return MIN_PRICE, lowest_priced_store, lowest_priced_phone                
+        self.make_json(jsonstr)
 
     # making the JSON File
-    def make_json(self, jsonstr, phone_name):
+    def make_json(self, jsonstr):
         try:
             with open("phone_details.json","r") as myfile:
                 content = myfile.read()
@@ -105,16 +87,18 @@ class PhoneDetails:
             flag = 0
 
         # checking if the phone already exists
-        if f"{phone_name}" not in content:
+        if f'"{self.phone_name}"' not in content:
             with open("phone_details.json","w+") as myfile:
                 if flag == 1:
                     content = content[:-1]
-                    content = content + '\n,\n'+f'"{phone_name}" : ' + jsonstr + '\n}'
+                    content = content + '\n,\n'+f'"{self.phone_name}" : ' + jsonstr + '\n}'
                 else:
-                    content = '{\n'+ f'"{phone_name}" : ' + jsonstr +'\n}'
+                    content = '{\n'+ f'"{self.phone_name}" : ' + jsonstr +'\n}'
                 myfile.write(content)
         else:
             print("You already have the phone details")
+        #Opening JSON file
+        self.open_file()
             
 
     def open_file(self):
@@ -154,16 +138,35 @@ class PhoneDetails:
             server.close()
         except:
             print('wrong email/password: Please try again with correct credentials.')
-            exit(0)
+            print("please UPDATE your Email/Password and run the app again.")
 
+    
+    # checking current prices at different sites .
+    def check_price(self):
+        global MIN_PRICE,lowest_priced_store
+        page = requests.get(self.URL)
+        soup = BeautifulSoup(page.content, 'html.parser')
+        prices = soup.find_all("span", {"class":"prc"})
+        stores = soup.find_all("img", {"class":"img_alt"})
+            
+        for j in range(len(prices)):
+            store = stores[j]['alt']
+            price = prices[j].get_text().replace("\n","")
+            price = int(price[price.find(' ')+1:-3].replace(",",""))
+            # checking the minimum price.
+            if price < MIN_PRICE :
+                MIN_PRICE = price
+                lowest_priced_store = store
+        # Comparing Price
+        self.price_comparator()
+                           
 
-    def price_comparator(self, MIN_PRICE,\
-         lowest_priced_store, lowest_priced_phone,\
-             PREV_MIN_PRICE):
-
+    def price_comparator(self):
+        global MIN_PRICE, lowest_priced_store
+        global PREV_MIN_PRICE
         if BASE_PRICE >= MIN_PRICE :
             print("Base price reached")
-            msg1 = f"The price of {lowest_priced_phone} is Rs. {MIN_PRICE} which is\n\
+            msg1 = f"The price of {self.phone_name} is Rs. {MIN_PRICE} which is\n\
                 below the base price on {lowest_priced_store} as of {datetime.now()}.\n\
             HURRY UP!!!!"
             self.phone_desktop_notify(msg1)
@@ -175,55 +178,36 @@ class PhoneDetails:
         elif PREV_MIN_PRICE > MIN_PRICE:
             print('Price has decreased')
             msg = f"Price has decreased from Rs. {PREV_MIN_PRICE} to Rs. {MIN_PRICE}\n\
-                which is of {lowest_priced_phone} on {lowest_priced_store} as of {datetime.now()} ."
+                for {self.phone_name} on {lowest_priced_store} as of {datetime.now()} ."
             self.phone_desktop_notify(msg)
             self.email_notify(msg)
             PREV_MIN_PRICE = MIN_PRICE
-        
-        return PREV_MIN_PRICE
+        print(f"Lowest Price is of {self.phone_name} at Rs. {MIN_PRICE} on {lowest_priced_store}\n \
+            as of {datetime.now()}")
 
+
+    def regular_price_checker(self,time_interval,base_price):
+        count=1
+        global BASE_PRICE 
+        BASE_PRICE = base_price
+        while True:
+            self.check_price()
+            count += 1
+            
+            time.sleep(time_interval)
+            
+        
 # Main starts here
 if __name__ == "__main__":
 
-    no_of_urls = int(input("Enter the number of phones you want to track:"))
-    # variables assigned
+    # making class
+    phone_details  = PhoneDetails()
 
-    MIN_PRICE = 1000000
-    lowest_priced_store = ''
-    lowest_priced_phone = ''
-    PREV_MIN_PRICE = MIN_PRICE
-    URLlist = []
-
-
-    for i in range(no_of_urls):
-        # making class
-        phone_details  = PhoneDetails()
-        # checking URL
-        webpage = phone_details.check_url()
-
-        # getting json of details
-        jsonstr = phone_details.scraping_site(webpage)
-
-        # making and appending the JSON File
-        phone_details.make_json(jsonstr,phone_details.phone_name)
-
-    # opening the JSON File
-    phone_details.open_file()
-
-    print('URLS entered and JSON file created .')
+    # checking URL and generating JSON file.
+    jsonstr = phone_details.check_url("")
+            
+    print('URL entered and JSON file created .')
     
     BASE_PRICE = int(input("Enter the price at which you want to purchase:\n"))
-
-    count = 1
-    while(True):
-        MIN_PRICE, lowest_priced_store, lowest_priced_phone =\
-        phone_details.check_price(MIN_PRICE,lowest_priced_store,\
-            lowest_priced_phone)
-        
-        PREV_MIN_PRICE = phone_details.price_comparator(MIN_PRICE, lowest_priced_store,\
-             lowest_priced_phone, PREV_MIN_PRICE)   
-        print(f"Lowest Price is of {lowest_priced_phone} at Rs. {MIN_PRICE} on {lowest_priced_store}\n \
-            as of {datetime.now()}")
-        count += 1 
-        # Change the time according to your convenience.
-        time.sleep(10) # in seconds
+    time_interval = int(input("Enter the time interval in seconds:"))
+    phone_details.regular_price_checker(time_interval,BASE_PRICE)

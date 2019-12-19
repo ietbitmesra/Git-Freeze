@@ -12,10 +12,11 @@ python3 index.py
 ## Sending E-mail feature
 
 There is a feature to send a mail to a list of users if there is a drop in price of any of the phones.
-You need to add some details to the configuration file for sending the mail like the host address of 
-the sender's service provider, port of the host, email of the sender, password of the sender's email,
-list of users to whom the email is to be sent. I have gitignored the original config file but added a
-sample config file with the format and the fields used in the original file.
+The app will check the price of the phones every hour(you may adjust the time limit). You need to add some
+details to the configuration file for sending the mail like the host address of the sender's service provider,
+port of the host, email of the sender, password of the sender's email, list of users to whom the email is to be 
+sent. I have gitignored the original config file but added a sample config file with the format and the fields 
+used in the original file.
 To use this feature run the following command.
 ```
 python3 server.py

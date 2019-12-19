@@ -1,0 +1,11 @@
+{
+ "host" : "host-address",
+ "host_port" : "port",
+ "email_sender" : "xyz@gmail.com",
+ "sender_password" : "password",
+ "email_receiver" : [ 
+                     "abc@gmail.com",
+                     "xyz@gmail.com
+                    ]
+}
+

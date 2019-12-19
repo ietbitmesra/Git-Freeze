@@ -34,6 +34,8 @@ pgrep -a python3
 kill <PID>
 ```
 
+![Screenshot of the mail](./images/img.jpeg)
+
 ## Contributions
 
 Will be happy to see any kind of improvements.Contributions are always welcomed. Just make a pull request.

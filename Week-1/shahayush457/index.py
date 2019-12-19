@@ -22,6 +22,9 @@ class mobile_features():
         self.phone_soup = soup(self.phone_page.content, 'html.parser')
 
     def get_features(self):
+        """Method to get the price and features of the phone from
+           the parsed html code"""
+           
         self.parse()
         self.phone_price = self.phone_soup.select('div._1vC4OE._3qQ9m1')[0].get_text()
         print(self.phone_type +" - "+ self.phone_price)
@@ -29,6 +32,8 @@ class mobile_features():
         self.phone_features = self.phone_soup.select('#container table._3ENrHu')
 
     def create_dictionary(self):
+        """Method to create and return a dictionary of features of the phone"""
+        
         self.get_features()
         self.phone['Price'] = self.phone_price
         for category in self.phone_features:

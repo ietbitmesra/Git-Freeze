@@ -63,6 +63,5 @@ if __name__ == "__main__":
         keeptrack()
         if(c%8==1):
             checkserver()    #1day updates
-
         time.sleep(updation_time)
         time.sleep(updation_time)

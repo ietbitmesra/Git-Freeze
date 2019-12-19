@@ -1,4 +1,4 @@
-# # Problem 1 - Ankit's Phone
+## Problem 1 - Ankit's Phone
 
 This is a python program which can get you JSON of features of any number of mobiles in simple steps and store it in file named "data.json" and provide you with regular updates about decrease in price of mobiles mentioned
 
@@ -24,8 +24,6 @@ Getting Link from Smartprix
 
 Getting Link from MySmartprice    
 ![Getting Link from MySmartprice](https://github.com/aryan29/Git-Freeze/blob/aryan29/week1/Week-1/aryan29/images/mysmartpricecode.png)
-=======
-As shown below:-
 ## Setting Up Server
 Setup comes with a file called keeptrack.py which you can run infiniely on your system for keep receiving regular updates for linux systems just run this command
 ```python
@@ -53,10 +51,7 @@ Example Image:-
 ![Price Change Updates](https://github.com/aryan29/Git-Freeze/blob/aryan29/week1/Week-1/aryan29/images/Screenshot_20191215-224146.png)
 We Provide you with Daily Emails and messages regarding whether your server is running or not if it is not Working you will not recive Email so you can switch it on   
 Example Image:-   
-![Server Running Update](https://github.com/aryan29/Git-Freeze/blob/aryan29/week1/Week-1/aryan29/images/Screenshot_20191215-224219.png)
-
-We Provide you with Daily Emails and messages regarding whether your server is running or not if it is not Working you will not recive Email so you can switch it on   
-
+![Server Running Update](https://github.com/aryan29/Git-Freeze/blob/aryan29/week1/Week-1/aryan29/images/Screenshot_20191215-224219.png) 
 ## Updates
 Added a smart feature to directly compare 2 phones on basis of their spec score just use
 ```python

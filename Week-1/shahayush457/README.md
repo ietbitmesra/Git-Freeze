@@ -40,4 +40,4 @@ Will be happy to see any kind of improvements.Contributions are always welcomed.
 
 ## Author
 
-##### [Ayush Shah](https://github.com/shahayush457)
+### [Ayush Shah](https://github.com/shahayush457)

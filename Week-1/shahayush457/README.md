@@ -6,7 +6,7 @@ The basic use of this app is to scrape the price and all the features of Apple I
 and OnePlus 7t Pro from an E-commerce website(I have used Flipkart, one can use any) and store it in a file in JSON format.
 Run the following command to get the features of the phones.
 ```
-python3 index.py
+$ python3 index.py
 ```
 
 ## Sending E-mail feature
@@ -19,19 +19,19 @@ sent. I have gitignored the original config file but added a sample config file 
 used in the original file.
 To use this feature run the following command.
 ```
-python3 server.py
+$ python3 server.py
 ```
 If you want to run your server infinitely(even when you exit your terminal or reboot into the system),
 then run the following command in your linux terminal.
 ```
-nohup python3 server.py &
+$ nohup python3 server.py &
 ```
 It will run your server in the background infinitely.
 To stop the server first find the process id(PID) of the process running using the pgrep command.
 Then kill the process.
 ```
 pgrep -a python3
-kill <PID>
+$ kill <PID>
 ```
 
 ![Screenshot of the mail](./images/img.jpeg)
@@ -42,4 +42,4 @@ Will be happy to see any kind of improvements.Contributions are always welcomed.
 
 ## Author
 
-### [Ayush Shah](https://github.com/shahayush457)
+#### [Ayush Shah](https://github.com/shahayush457)

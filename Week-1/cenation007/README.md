@@ -39,6 +39,7 @@ Model: iphone 7 plus
 ```
 The output will be provided in a file named " compare2.json".
 
+The price of the phones are tracked after every 30 seconds.
 For tracking prices you need to provide the emails of the sender ans the receivers in the " new.js " file.eg;
 ```
 user: 'abc@gmail.com',//sender's mail

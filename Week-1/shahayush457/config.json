@@ -1,0 +1,10 @@
+{
+ "host" : "smtp.gmail.com",
+ "host_port" : "587",
+ "email_sender" : "shahayush457@gmail.com",
+ "sender_password" : "",
+ "email_receiver" : [ 
+                     "imh10014.18@bitmesra.ac.in",
+                     "harsh.vardhan320@gmail.com"
+                    ]
+}

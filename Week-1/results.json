@@ -1,0 +1,23 @@
+{
+    "Name: ": "Apple iPhone XR",
+    "Price: ": "INR 63,999",
+    "Connectivity: ": "Dual Sim, 3G, 4G, VoLTE, Wi-Fi, NFC",
+    "Processor: ": "A13 Bionic, Hexa Core, 2.65 GHz Processor",
+    "Memory: ": "4 GB RAM, 64 GB inbuilt",
+    "Battery: ": "3110 mAh Battery",
+    "Screen: ": "6.1 inches, 828 x 1792 px Display with Large Notch",
+    "Camera: ": "12 MP + 12 MP Dual Rear & 12 MP Front Camera",
+    "External Memory: ": "Memory Card Not Supported",
+    "OS: ": "iOS v13"
+}{
+    "Name: ": "OnePlus 7 Pro",
+    "Price: ": "INR 53,589",
+    "Connectivity: ": "Dual Sim, 3G, 4G, VoLTE, Wi-Fi, NFC",
+    "Processor: ": "Snapdragon 855+, Octa Core, 2.96 GHz Processor",
+    "Memory: ": "8 GB RAM, 256 GB inbuilt",
+    "Battery: ": "4085 mAh Battery with Fast Charging ",
+    "Screen: ": "6.67 inches, 1440 x 3120 px Display",
+    "Camera: ": "48 MP + 16 MP + 8 MP Triple Rear & 16 MP Front Camera",
+    "External Memory: ": "Memory Card Not Supported",
+    "OS: ": "Android v10.0"
+}

@@ -65,7 +65,7 @@ def setting_up_dataframe():
     size_box1 = soup1.findAll('li', attrs={'class': '_2-riNZ'})
     size1 = size_box1[1].text.strip()
     connectivity_box1 = soup1.findAll('li', attrs={'class': '_3YhLQA'})
-    connectivity1 = connectivity_box1[34].text.strip()
+    connectivity1 = connectivity_box1[39].text.strip()
     storage_box1 = soup1.findAll('li', attrs={'class': '_3YhLQA'})
     storage1 = storage_box1[18].text.strip()
     processor_box1 = soup1.findAll('li', attrs={'class': '_3YhLQA'})

@@ -2,7 +2,6 @@ import requests, time, os
 import subprocess
 import smtplib
 import sys
-from getpass import getpass
 from bs4 import  BeautifulSoup
 from notify_run import Notify
 from datetime import datetime
@@ -29,13 +28,13 @@ class PhoneDetails():
             page = requests.get(URL)
             if page.status_code ==200:
                 print("Correct URL")
+                self.URL = URL
+                self.scraping_site(page)
             else:
                 print('Wrong URL!! Enter correct URL:')
         except:
             print('Wrong URL!! Enter correct URL:')  
-        self.URL = URL
-        self.scraping_site(page) 
-        
+         
         
     def scraping_site(self, page):
         soup = BeautifulSoup(page.content, 'html.parser')
@@ -109,8 +108,11 @@ class PhoneDetails():
             os.startfile(filepath+'/phone_details.json') 
         except:
             # for linux
-            opener ="open" if sys.platform == "darwin" else "xdg-open" 
-            subprocess.call([opener, filepath+'/phone_details.json'])
+            try:
+                opener ="open" if sys.platform == "darwin" else "xdg-open" 
+                subprocess.call([opener, filepath+'/phone_details.json'])
+            except:
+                pass
 
     
     def phone_desktop_notify (self, msg):
@@ -134,11 +136,11 @@ class PhoneDetails():
             server.login(config['sender_mail'],config['sender_password'])
             for i in config['receiver_mails']:
                 server.sendmail(config['sender_mail'], i, msg)
-            print("Emails sent")
+            print("\nEmails sent\n")
             server.close()
         except:
-            print('wrong email/password: Please try again with correct credentials.')
-            print("please UPDATE your Email/Password and run the app again.")
+            print('\nwrong email/password: Please try again with correct credentials.')
+            print("please UPDATE your Email/Password and run the app again.\n")
 
     
     # checking current prices at different sites .
@@ -182,18 +184,18 @@ class PhoneDetails():
             self.phone_desktop_notify(msg)
             self.email_notify(msg)
             PREV_MIN_PRICE = MIN_PRICE
-        print(f"Lowest Price is of {self.phone_name} at Rs. {MIN_PRICE} on {lowest_priced_store}\n \
+        print(f"Lowest Price for {self.phone_name} at Rs. {MIN_PRICE} on {lowest_priced_store}\n \
             as of {datetime.now()}")
 
-
-    def regular_price_checker(self,time_interval,base_price):
-        count=1
-        global BASE_PRICE 
+    # Function to check price at given Intervals.
+    def regular_price_checker(self, time_interval, base_price):
+    
+        global BASE_PRICE, count
+        count = 1
         BASE_PRICE = base_price
         while True:
             self.check_price()
             count += 1
-            
             time.sleep(time_interval)
             
         

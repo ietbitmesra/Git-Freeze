@@ -2,7 +2,7 @@ import tkinter as tk
 import json
 from app import PhoneDetails
 from tkinter import *
-
+import time
 with open("phoneurls.json","r") as f:
     cont = json.load(f)
 
@@ -44,80 +44,81 @@ def on_select(event):
 def generate_file():
     # generating JSON file.
     phone_details.check_url(dct[f'{entry1_var.get()}'])
-    root.destroy()
+    window.destroy()
 
 
 def start_server():
-    print("Server has started . Press Ctrl+C to stop server.")
-    root1.destroy()
+    #starting the notification server.
+    print("Server has started . Press Ctrl+ C inside terminal to stop server.\n\n")
+    window1.destroy()
     phone_details.regular_price_checker(time_var.get(),base_var.get())
-    
 
-# --- main ---
+# =====------ MAIN -------===== #
 
 # Extracting URLs
 test_list = dct.keys()
-
 phone_details = PhoneDetails()
-root = tk.Tk()
 
 # Initial window
-root.minsize(500,800)
-root.title("Phone Price tracker and Notifier")
+window = tk.Tk()
+window.minsize(500,800)
+window.title("Phone Price tracker and Notifier")
 
-
-label = tk.Label(root,text= "Type the phone name \n\
+label = tk.Label(window,text= "Type the phone name \n\
      you want to search : (from given options only)",pady = 30).pack()
 
 entry1_var = StringVar()
 
-entry = tk.Entry(root, width = 40, textvariable = entry1_var)
+entry = tk.Entry(window, width = 40, textvariable = entry1_var)
 entry.pack()
 entry.focus()
 entry.bind('<KeyRelease>', on_keyrelease)
 
-listbox = tk.Listbox(root,width = 40,height = 20)
+listbox = tk.Listbox(window,width = 40,height = 20)
 listbox.pack()
 listbox.bind('<<ListboxSelect>>', on_select)
 listbox_update(test_list)
 
-button = Button(root, text="Generate Json file",pady=10,command = generate_file)
+button = Button(window, text="Generate Json file",pady=10,command = generate_file)
 button.pack()
 
-label2 = tk.Label(root ,text = " If you can't find your phone name (rare case),\n\
+label2 = tk.Label(window ,text = " If you can't find your phone name (rare case),\n\
     go to phoneurls.json file and add your phone name and link \n\
         from 91 mobiles.com .Go to README.md for more details ",\
             pady=10).pack()
 
-root.mainloop()
+window.mainloop()
+# Initial window closed.
 
-
+ #Start of second window.
 if len(entry1_var.get())>0:
-    #Start of second window.
-        
-    root1 = Tk()
-    root1.minsize(500,500)
-    root1.title("Phone Price tracker and Notifier")
+       
+    window1 = Tk()
+    window1.minsize(500,600)
+    window1.title("Phone Price tracker and Notifier")
     base_var = IntVar()
     time_var = IntVar()
-    label = tk.Label(root1,text = "JSON File Created!!!\n\n\
+    label = tk.Label(window1,text = f"JSON File Created for {phone_details.phone_name}!!!\n\n\
         Check the current price in JSON File \n\
         add the base price (Price at which you want to purchase)\n\
         of the phone and the time interval at which you want to check for price.\n\
         You will be receiving notifications at these intervals\n\
-        if prices decreases or is below the base price.",pady =10)
+        if prices decreases or is below the base price.\n\
+        ex - if you set 10,then you will receive notification after every 10th second\n\
+        if the prices decreases or is below base price.",pady =10)
     label.pack()
 
-    base_label = tk.Label(root1,text = "Base Price :(in Rs.) ").pack()
-    entry1 = tk.Entry(root1, width = 20, textvariable = base_var)
+    base_label = tk.Label(window1,text = "Base Price :(in Rs.) ").pack()
+    entry1 = tk.Entry(window1, width = 20, textvariable = base_var)
     entry1.pack()
 
-    time_label = tk.Label(root1,text="\n\nTime Interval (in Seconds) : ").pack()
-    entry2 = tk.Entry(root1,width = 20,textvariable = time_var)
+    time_label = tk.Label(window1,text="\n\nTime Interval (in Seconds) : ").pack()
+    entry2 = tk.Entry(window1,width = 20,textvariable = time_var)
     entry2.pack()
 
-    button1 = Button(root1,text = "Start getting Notifications!",\
+    button1 = Button(window1,text = "Start getting Notifications!",\
     command = start_server,pady = 20)
     button1.pack()
-
-    root1.mainloop()
+       
+    window1.mainloop()
+    #second window closed.

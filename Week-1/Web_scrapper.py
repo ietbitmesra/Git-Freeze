@@ -100,8 +100,8 @@ def runn_multiple_times():
                 conn=smtplib.SMTP('smtp.gmail.com:587') # smtp address and port
                 conn.ehlo()
                 conn.starttls() # starts tls encryption. When we send our password it will be encrypted.
-                conn.login('#add_sender_mail@gmail.com','password' )
-                conn.sendmail('#add_sender_mail@gmail.com', '#receiver_mail@gmail.com', 'Subject: Price Drop Alert!\n\nAttention!\n\nIphone price has dropped!\n\n:\nPrice Notifier V1.0')
+                conn.login('add_sender_mail@gmail.com','password' )
+                conn.sendmail('add_sender_mail@gmail.com', 'receiver_mail@gmail.com', 'Subject: Price Drop Alert!\n\nAttention!\n\nIphone price has dropped!\n\n:\nPrice Notifier V1.0')
                 conn.quit()	
     
     
@@ -109,8 +109,8 @@ def runn_multiple_times():
                 conn=smtplib.SMTP('smtp.gmail.com:587') # smtp address and port
                 conn.ehlo()
                 conn.starttls() # starts tls encryption. When we send our password it will be encrypted.
-                conn.login('#add_sender_mail@gmail.com','password' )
-                conn.sendmail('#add_sender_mail@gmail.com', '#receiver_mail@gmail.com', 'Subject: Price Drop Alert!\n\nAttention!\n\nOneplus price has dropped!\n\n:\nPrice Notifier V1.0')
+                conn.login('add_sender_mail@gmail.com','password' )
+                conn.sendmail('add_sender_mail@gmail.com', 'receiver_mail@gmail.com', 'Subject: Price Drop Alert!\n\nAttention!\n\nOneplus price has dropped!\n\n:\nPrice Notifier V1.0')
                 conn.quit()	
            
         else:

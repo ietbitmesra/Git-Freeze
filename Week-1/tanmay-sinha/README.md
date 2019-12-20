@@ -21,16 +21,29 @@ You are good to go.
 
 ## How to Use?
 
-1. Run the python program GUIapp in the terminal. A window will appear like this.
-2. Type anything related to your phone name as shown.
+1. Run the python program GUIapp in the terminal. A window will appear like this.<br>
+  ![search box](https://github.com/tanmay-sinha/Git-Freeze/blob/tanmay-sinha/week1/Week-1/tanmay-sinha/images/Screenshot%20from%202019-12-19%2021-08-31.png)
+2. Type anything related to your phone name as shown.<br>
+ ![search box1](https://github.com/tanmay-sinha/Git-Freeze/blob/tanmay-sinha/week1/Week-1/tanmay-sinha/images/Screenshot%20from%202019-12-19%2020-49-31.png)
 3. Select your phone from the given options and click on "Generate JSON" button . The phone details will be appended to the "phone_details.json" file .<br><br>
 If you don't find your phone, go to [91Mobiles](https://www.91mobiles.com/), find your phone and its 91Mobiles link and add it to "phoneurls.json" file in JSON format anywhere.
 
-4. Now a window will appear asking for Base price and time intervals . Enter details and click on "Start Server" button. You can close the server using Ctrl+C if you don't want to receive further notifications .
+4. Now a window will appear asking for Base price and time intervals . Enter details and click on "Start Server" button. You can close the server using Ctrl+C if you don't want to receive further notifications .<br>
+![base price window](https://github.com/tanmay-sinha/Git-Freeze/blob/tanmay-sinha/week1/Week-1/tanmay-sinha/images/Screenshot%20from%202019-12-19%2021-13-27.png)
 
-Notification Images :-
+Notification Images :-<br><br>
 
-Email Images :-
+Desktop Notiification :- <br><br>
+
+![dektop notification](https://github.com/tanmay-sinha/Git-Freeze/blob/tanmay-sinha/week1/Week-1/tanmay-sinha/images/Screenshot%20from%202019-12-19%2021-26-35.png)
+
+Mobile Notification :- <br><br>
+
+![Mobile notification](https://github.com/tanmay-sinha/Git-Freeze/blob/tanmay-sinha/week1/Week-1/tanmay-sinha/images/Screenshot_20191219-212554.png)
+
+Email Notification :-<br>
+
+![Email notification](https://github.com/tanmay-sinha/Git-Freeze/blob/tanmay-sinha/week1/Week-1/tanmay-sinha/images/Screenshot%20from%202019-12-19%2021-20-41.png)
 
 ## Contributing
 

@@ -21,8 +21,7 @@ You need to install the modules mentioned below for running of the code(just typ
 After installing the modules, 
 You need to provide the emails of the sender's as well as the receiver's in the " Web_scrapper.py " file in the space provided and also password of sender's email id(picture shows where in the code you need to add info)
 
-<img src="Week-1/Web_Scrapper_snap.png">
-
+<img src="Web_Scrapper_snap.png">
 
 Also you have to turn-on permission to less secure accounts in your gmail account(i.e. sender's email,no need to do it in receiver email)
 This can be easily done by following the instructions provided in Official Gmail Website(link given below):
@@ -35,7 +34,7 @@ Web_scrapper.py
 
 ```
 The output will be provided in a file named "Compare.json".
-
+The application compares the current price of the phone and price of the phone at previous run which is stored in "price_at_each_run.csv" file every minute  
 
 ## Built with
 -Python3.7.4

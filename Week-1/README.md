@@ -12,4 +12,4 @@ To run the program, open the "Sample1.py" file in any Python IDE, preferably PyC
 
 # What Softwares I used?
 
-To make the whole project, I used the PyCharm IDE by Jetbrains and the new Windows Powershell Terminal.
+To make the whole project, I used the PyCharm IDE by Jetbrains and the new Windows Powershell Terminal. To perform Web Scraping I used the BeautifulSoup library and to send the E-Mails, I used the "smtplib" library.

@@ -9,15 +9,10 @@ from bs4 import BeautifulSoup
 
 def mail_send():
     s = smtplib.SMTP('smtp.gmail.com', 587)
-    # start TLS for security
     s.starttls()
-    # Authentication
     s.login("holidaywalasoldier@gmail.com", "JaiHind1947")
-    # message to be sent
     message = "Your preferred Phone Prices have changed... Wanna Take a look???"
-    # sending the mail
     s.sendmail("holidaywalasoldier@gmail.com", "be10053.18@bitmesra.ac.in", message)
-    # terminating the session
     print("Mail sent....")
     s.quit()
 
@@ -34,7 +29,7 @@ def setting_up_dataframe():
     price = float(price_str)
     os_box = soup.findAll('li', attrs={'class': '_3YhLQA'})
     os = os_box[14].text.strip()
-    ram = "4 GB"  # kyunki nhi mila
+    ram = "4 GB" 
     camera_box = soup.findAll('li', attrs={'class': '_2-riNZ'})
     camera = camera_box[2].text.strip()
     size_box = soup.findAll('li', attrs={'class': '_2-riNZ'})

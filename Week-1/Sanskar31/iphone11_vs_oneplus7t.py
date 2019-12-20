@@ -173,14 +173,14 @@ def comparePrices():
     conv_oprice = priceo[1:7]
     conv_oprice = float(conv_oprice[0:2] + conv_oprice[3:7])
     #comapring with current prices
-    if conv_iprice < iphone_price:
+    if conv_iprice != iphone_price:
         print("Price Difference Found!\nSending Mail...")
         sendMail()
         print("Updating Json...")
         updateJson()
         print("Resetting Price...")
         setPrice()
-    elif conv_oprice < oneplus_price:
+    elif conv_oprice != oneplus_price:
         print("Price Difference Found!\nSending Mail...")
         sendMail()
         print("Updating Json...")

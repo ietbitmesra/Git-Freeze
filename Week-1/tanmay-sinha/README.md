@@ -5,6 +5,8 @@ This is a basic python Tkinter program where user can type the phone name and th
 <br>
 User will also receive desktop and mobile notifications and also E-mails regarding price drops and if price drops below the base price, at given time intervals. User can set the base price ( price at which user wants to purchase the phone ) and time interval at which user wants to check the price.
 
+Python version required - Python 3.6 and above.
+
 ## Quick Setup
 
 1. Tkinter comes pre-installed with python. In case you have any problem using Tkinter , refer [this](https://stackoverflow.com/a/11690261).
@@ -28,7 +30,7 @@ You are good to go.
 3. Select your phone from the given options and click on "Generate JSON" button . The phone details will be appended to the "phone_details.json" file .<br><br>
 If you don't find your phone, go to [91Mobiles](https://www.91mobiles.com/), find your phone and its 91Mobiles link and add it to "phoneurls.json" file in JSON format anywhere.
 
-4. Now a window will appear asking for Base price and time intervals . Enter details and click on "Start Server" button. You can close the server using Ctrl+C if you don't want to receive further notifications .<br>
+4. Now a window will appear asking for Base price and time intervals . Enter details and click on "Start Getting Notification " button. You can close the server using Ctrl+C if you don't want to receive further notifications .<br>
 ![base price window](https://github.com/tanmay-sinha/Git-Freeze/blob/tanmay-sinha/week1/Week-1/tanmay-sinha/images/Screenshot%20from%202019-12-19%2021-13-27.png)
 
 Notification Images :-<br><br>

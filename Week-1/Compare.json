@@ -1,0 +1,202 @@
+{
+    "Audio Formats": {
+        "IPHONE 11": "AAC LC, HE AAC, HE AAC v2, Protected AAC, MP3, Linear PCM, Apple Lossless, FLAC, Dolby Digital (AC 3), Dolby Digital Plus (E AC 3), Dolby Atmos and Audible (Formats 2, 3, 4, Audible Enhanced Audio, AAX and AAX+)",
+        "ONEPLUS 7T PRO": "MP3, AAC, AAC+, WMA, AMR-NB, AMR-WB, WAV, FLAC, APE, OGG, MID, M4A, IMY, AC3, EAC3, EAC3-JOC, AC4\nRecording: WAV, AAC, AMR"
+    },
+    "Bluetooth Support": {
+        "IPHONE 11": "Yes",
+        "ONEPLUS 7T PRO": "Yes"
+    },
+    "Bluetooth Version": {
+        "IPHONE 11": "5",
+        "ONEPLUS 7T PRO": "5"
+    },
+    "Browse Type": {
+        "IPHONE 11": "Smartphones",
+        "ONEPLUS 7T PRO": "Smartphones"
+    },
+    "Color": {
+        "IPHONE 11": "White",
+        "ONEPLUS 7T PRO": "Haze Blue"
+    },
+    "Depth": {
+        "IPHONE 11": "8.3 mm",
+        "ONEPLUS 7T PRO": "8.8 mm"
+    },
+    "Display Size": {
+        "IPHONE 11": "15.49 cm (6.1 inch)",
+        "ONEPLUS 7T PRO": "16.94 cm (6.67 inch)"
+    },
+    "Dual Camera Lens": {
+        "IPHONE 11": "Primary Camera",
+        "ONEPLUS 7T PRO": "Primary Camera"
+    },
+    "Flash": {
+        "IPHONE 11": "Rear Brighter True Tone Flash with Slow Sync and Front Retina Flash",
+        "ONEPLUS 7T PRO": "Front & Back Flash"
+    },
+    "Full HD Recording": {
+        "IPHONE 11": "Yes",
+        "ONEPLUS 7T PRO": "Yes"
+    },
+    "Graphics PPI": {
+        "IPHONE 11": "326 PPI",
+        "ONEPLUS 7T PRO": "402 ppi"
+    },
+    "HD Recording": {
+        "IPHONE 11": "Yes",
+        "ONEPLUS 7T PRO": "Yes"
+    },
+    "Height": {
+        "IPHONE 11": "150.9 mm",
+        "ONEPLUS 7T PRO": "162.6 mm"
+    },
+    "Hybrid Sim Slot": {
+        "IPHONE 11": "No",
+        "ONEPLUS 7T PRO": "No"
+    },
+    "In The Box": {
+        "IPHONE 11": "Handset, EarPods with Lightning Connector, Lightning to USB Cable, USB Power Adapter, Documentation",
+        "ONEPLUS 7T PRO": "Handset, Warp Charge 30 Power Adapter, Warp Type-C Cable (Support USB 2.0), Quick Start Guide, Welcome Letter, Safety Information and Warranty Card, Logo Sticker, Case, Screen Protector (pre-applied), SIM Tray Ejector"
+    },
+    "Internal Storage": {
+        "IPHONE 11": "128 GB",
+        "ONEPLUS 7T PRO": "256 GB"
+    },
+    "Internet Connectivity": {
+        "IPHONE 11": "4G, 3G, Wi-Fi",
+        "ONEPLUS 7T PRO": "GSM, (B2/3/5/8), CDMA, (BC0/BC1), 4G, FDD-LTE, (B1/2/3/4/5/7/8/12/13/17/18/19/20/26/28/29), TDD-LTE, (B34/38/39/40/41), Bluetooth 5.0 support aptX/HD/LDAC/AAC, TDS, (B34/B39), NFC enabled, WiFi, 2x2 MIMO, Wi-Fi 802.11 a/b/g/n/ac/2.4G/5G, UMTS:B1/2/4/5/8/9/19"
+    },
+    "Model Name": {
+        "IPHONE 11": "iPhone 11",
+        "ONEPLUS 7T PRO": "7T Pro"
+    },
+    "Model Number": {
+        "IPHONE 11": "MWM22HN/A",
+        "ONEPLUS 7T PRO": "hd1911"
+    },
+    "Network Type": {
+        "IPHONE 11": "4G VOLTE, 4G, 3G, 2G",
+        "ONEPLUS 7T PRO": "4G VOLTE"
+    },
+    "OTG Compatible": {
+        "IPHONE 11": "No",
+        "ONEPLUS 7T PRO": "Yes"
+    },
+    "Operating System": {
+        "IPHONE 11": "iOS 13",
+        "ONEPLUS 7T PRO": "Android Pie 10"
+    },
+    "Optical Zoom": {
+        "IPHONE 11": "Yes",
+        "ONEPLUS 7T PRO": "Yes"
+    },
+    "Other Display Features": {
+        "IPHONE 11": "1400:1 Contrast Ratio (Typical), True Tone Display, Wide Colour Display (P3), Haptic Touch, 625 nits Max Brightness (Typical), Fingerprint Resistant Oleophobic Coating, Support for Display of Multiple Languages and Characters Simultaneously",
+        "ONEPLUS 7T PRO": "Video Enhancer\nReading mode\nNight mode"
+    },
+    "Phone Book": {
+        "IPHONE 11": "Yes",
+        "ONEPLUS 7T PRO": "Yes"
+    },
+    "Price": {
+        "IPHONE 11": "\u20b969,900",
+        "ONEPLUS 7T PRO": "\u20b953,589"
+    },
+    "Primary Camera": {
+        "IPHONE 11": "12MP + 12MP",
+        "ONEPLUS 7T PRO": "48MP + 8MP"
+    },
+    "Primary Camera Available": {
+        "IPHONE 11": "Yes",
+        "ONEPLUS 7T PRO": "Yes"
+    },
+    "Primary Camera Features": {
+        "IPHONE 11": "Dual 12MP Ultra Wide and Wide Cameras, Ultra Wide: f/2.4 Aperture and 120Degree Field of View, Wide: f/1.8 Aperture, Portrait Mode with Advanced Bokeh and Depth Control, Portrait Lighting with Six Effects (Natural, Studio, Contour, Stage, Stage Mono, High-key Mono), Optical Image Stabilisation (Wide), Five Element Lens (Ultra Wide), Six Element Lens (Wide), Brighter True Tone Flash with Slow Sync, Panorama (Up to 64MP), 100% Focus Pixels (Wide), Night Mode, Auto Adjustments, Next-generation Smart HDR for Photos, Wide Colour Capture for Photos and Live Photos, Advanced Red Eye Correction, Auto Image Stabilisation, Burst Mode, Photo Geotagging, Image Formats Captured: HEIF and JPEG",
+        "ONEPLUS 7T PRO": "UltraShot, Nightscape, Portrait, Pro Mode, Panorama, HDR, AI Scene Detection, RAW Image"
+    },
+    "Processor Type": {
+        "IPHONE 11": "A13 Bionic Chip",
+        "ONEPLUS 7T PRO": "Qualcomm\u00ae\u00a0Snapdragon\u2122\u00a0855 Plus (Octa-core, 7nm, up to 2.96 GHz) , with Qualcomm AI Engine"
+    },
+    "Removable Battery": {
+        "IPHONE 11": "No",
+        "ONEPLUS 7T PRO": "No"
+    },
+    "Resolution": {
+        "IPHONE 11": "1792 x 828 Pixels",
+        "ONEPLUS 7T PRO": "3120 x 1440$$Pixels"
+    },
+    "Resolution Type": {
+        "IPHONE 11": "Liquid Retina HD Display",
+        "ONEPLUS 7T PRO": "Quad HD+"
+    },
+    "SIM Size": {
+        "IPHONE 11": "Nano SIM and eSIM",
+        "ONEPLUS 7T PRO": "Nano"
+    },
+    "SIM Type": {
+        "IPHONE 11": "Dual Sim",
+        "ONEPLUS 7T PRO": "Dual Sim"
+    },
+    "Secondary Camera": {
+        "IPHONE 11": "12MP",
+        "ONEPLUS 7T PRO": "16MP"
+    },
+    "Secondary Camera Available": {
+        "IPHONE 11": "Yes",
+        "ONEPLUS 7T PRO": "Yes"
+    },
+    "Secondary Camera Features": {
+        "IPHONE 11": "TrueDepth Camera - 12MP Camera, f/2.2 Aperture, Portrait Mode with Advanced Bokeh and Depth Control, Portrait Lighting with Six Effects (Natural, Studio, Contour, Stage, Stage Mono, High Key Mono), Animoji and Memoji, 4K Video Recording at 24 fps, 30 fps or 60 fps, 1080p HD Video Recording at 30 fps or 60 fps, Slow-motion Video Support for 1080p at 120 fps, Next Generation Smart HDR for Photos, Extended Dynamic Range for Video at 30 fps, Cinematic Video Stabilisation (4K, 1080p and 720p), Wide Colour Capture for Photos and Live Photos, Retina Flash, Auto Image Stabilisation, Burst Mode",
+        "ONEPLUS 7T PRO": "Face Unlock, HDR, Screen Flash, Face Retouching"
+    },
+    "Sensors": {
+        "IPHONE 11": "Face ID, Barometer, Three Axis Gyro, Accelerometer, Proximity Sensor, Ambient Light Sensor",
+        "ONEPLUS 7T PRO": "In-display Fingerprint Sensor, Accelerometer, Electronic Compass, Gyroscope, Ambient Light Sensor, Proximity Sensor, Sensor Core, Laser Sensor"
+    },
+    "Smartphone": {
+        "IPHONE 11": "Yes",
+        "ONEPLUS 7T PRO": "Yes"
+    },
+    "Speaker Phone": {
+        "IPHONE 11": "Yes",
+        "ONEPLUS 7T PRO": "Yes"
+    },
+    "Supported Networks": {
+        "IPHONE 11": "4G VoLTE, 4G LTE, UMTS, GSM",
+        "ONEPLUS 7T PRO": "4G LTE"
+    },
+    "Touchscreen": {
+        "IPHONE 11": "Yes",
+        "ONEPLUS 7T PRO": "Yes"
+    },
+    "Video Formats": {
+        "IPHONE 11": "HEVC, H.264, MPEG 4 Part 2 and Motion JPEG, Supports Dolby Vision and HDR10 Content",
+        "ONEPLUS 7T PRO": "MKV, MOV, MP4, H.265(HEVC), AVI, WMV, TS, 3GP, FLV, WEBM"
+    },
+    "Warranty Summary": {
+        "IPHONE 11": "Brand Warranty for 1 Year",
+        "ONEPLUS 7T PRO": "1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase"
+    },
+    "Weight": {
+        "IPHONE 11": "194 g",
+        "ONEPLUS 7T PRO": "206 g"
+    },
+    "Wi-Fi": {
+        "IPHONE 11": "Yes",
+        "ONEPLUS 7T PRO": "Yes"
+    },
+    "Wi-Fi Hotspot": {
+        "IPHONE 11": "Yes",
+        "ONEPLUS 7T PRO": "Yes"
+    },
+    "Wi-Fi Version": {
+        "IPHONE 11": "802.11ax Wi-Fi 6 with 2x2 MIMO",
+        "ONEPLUS 7T PRO": "2x2 MIMO, Wi-Fi 802.11 a/b/g/n/ac, 2.4G/5G"
+    },
+    "Width": {
+        "IPHONE 11": "75.7 mm",
+        "ONEPLUS 7T PRO": "75.9 mm"
+    }
+}

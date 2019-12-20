@@ -1,19 +1,44 @@
-# Problem 1 - Ankit's Phone
+## Problem 1- Ankit's Phone
 
-Ankit recently came 1st at a hackathon and now he wants to buy a new phone with the prize money he received. He is confused between iPhone 11 and OnePlus 7T Pro. Since he is very busy preparing for his exams, he needs your help. Give him a list of features comparing the 2 phones. 
+The application compares the price of two phones namely iPhone 11 and OnePlus 7T Pro. It compares the features of the two phones and gives the output in the form of JSON file named as 'Compare.json'. It also checks for the drop in price of any of the two phones and provides the notification by email. You can compare any two mobile phones of you choice by just changing the url in code.
 
-## Basic Requirements
+## Getting Started
 
-**Output** : A file containing [JSON](https://www.copterlabs.com/json-what-it-is-how-it-works-how-to-use-it/) of the features of the 2 phones. (We'll leave the JSON format details up to you, but they should at least contain the Price, Operating System, Internal Storage, Camera features, Connectivity features and any other features that you would want to include).
+Clone the project on you local machine. The main file is " Web_scrapper.py " which contains the code. 
 
-## Next Steps
+## Prerequisites
 
-Once you are done with the basic requirements, get creative! Try to scrape the price of each of the phones at regular intervals and inform the user if there is a price drop via email/sms.
+You need to install the modules mentioned below for running of the code(just type in these commands in bash/command prompt)
 
-## Resources
+```
+   pip3 install requests
+   pip3 install bs4
+   pip3 install smtplib
+   
+```
+## Usage 
 
-You can use any language you prefer, but we'd recommend python ( Please don't use [python 2](https://wiki.python.org/moin/Python2orPython3)! ) Make sure you read and follow the [coding instructions](../CODING_INSTRUCTIONS.md). Here are some resources to get you started:
+After installing the modules, 
+You need to provide the emails of the sender's as well as the receiver's in the " Web_scrapper.py " file in the space provided and also password of sender's email id(picture shows where in the code you need to add info)
 
-- IET Explains: [Web Scraping w Python | Beautiful Soup](https://www.youtube.com/watch?v=oLbjA8mBK2Q&feature=youtu.be)
-- [freeCodeCamp's post on scraping](https://medium.freecodecamp.org/how-to-scrape-websites-with-python-and-beautifulsoup-5946935d93fe)
-- Python guides for [command line args](https://pymotw.com/3/argparse/index.html#module-argparse), [json](https://pymotw.com/3/json/index.html) & [file io](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
+<img width="400" src="Week-1/Web_Scrapper_snap.png">
+
+
+Also you have to turn-on permission to less secure accounts in your gmail account(i.e. sender's email,no need to do it in receiver email)
+This can be easily done by following the instructions provided in Official Gmail Website(link given below):
+https://support.google.com/cloudidentity/answer/6260879?hl=en
+
+Now after doing all these steps,we are ready to run our application.
+For running the application you need to run the following command in cmd/bash
+```
+Web_scrapper.py
+
+```
+The output will be provided in a file named "Compare.json".
+
+
+## Built with
+-Python3.7.4
+
+## Author
+> Ashutosh Kumar

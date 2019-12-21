@@ -1,7 +1,8 @@
+import json
+import configparser
+
 import requests
 import bs4
-import configparser
-import json
 
 
 class Spec:

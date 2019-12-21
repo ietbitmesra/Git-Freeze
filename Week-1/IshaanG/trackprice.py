@@ -1,7 +1,8 @@
-import spec
 import time
 import smtplib
 import ssl
+
+import spec
 
 
 class TrackPrice:

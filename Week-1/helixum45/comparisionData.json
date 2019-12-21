@@ -1,0 +1,37 @@
+[
+    {
+        "Price": "₹53,587",
+        "Model Name": "7T Pro",
+        "Color": "Haze Blue",
+        "SIM Type": "Dual Sim",
+        "Hybrid Sim Slot": "No",
+        "Display Size": "16.94 cm (6.67 inch)",
+        "Resolution": "3120 x 1440$$Pixels",
+        "GPU": "Adreno 640",
+        "Operating System": "Android Pie 10",
+        "Processor Type": "Qualcomm® Snapdragon™ 855 Plus (Octa-core, 7nm, up to 2.96 GHz) , with Qualcomm AI Engine",
+        "Processor Core": "Octa Core",
+        "Primary Clock Speed": "2.96 GHz",
+        "Internal Storage": "256 GB",
+        "RAM": "8 GB",
+        "Primary Camera": "48MP + 8MP",
+        "Secondary Camera": "16MP",
+        "Network Type": "4G VOLTE"
+    },
+    {
+        "Price": "₹1,23,900",
+        "Model Name": "iPhone 11 Pro Max",
+        "Color": "Midnight Green",
+        "SIM Type": "Dual Sim",
+        "Hybrid Sim Slot": "No",
+        "SAR Value": "1.6 W/kg (over 1 g) SAR Limit, Head: 1.16, Body: 1.17",
+        "Display Size": "16.51 cm (6.5 inch)",
+        "Resolution": "2688 x 1242 Pixels",
+        "Operating System": "iOS 13",
+        "Processor Type": "A13 Bionic Chip",
+        "Internal Storage": "256 GB",
+        "Primary Camera": "12MP + 12MP + 12MP",
+        "Secondary Camera": "12MP",
+        "Network Type": "4G VOLTE, 4G, 3G, 2G"
+    }
+]

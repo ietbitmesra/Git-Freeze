@@ -35,8 +35,11 @@ class TrackPrice:
         Current price {self.get_current_price()[mobile]}"""
         context = ssl.create_default_context()
         with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
-            server.login(self.config['Emails']['sender email'], self.config['Emails']['sender password'])
-            server.sendmail(self.config['Emails']['sender email'], self.config['Emails']['receiver email'], message.encode("utf8"))
+            server.login(self.config['Emails']['sender email'],
+                         self.config['Emails']['sender password'])
+            server.sendmail(self.config['Emails']['sender email'],
+                            self.config['Emails']['receiver email'],
+                            message.encode("utf8"))
 
 
 TrackPrice().low_price()

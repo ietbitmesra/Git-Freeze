@@ -30,8 +30,18 @@ class Spec:
         spec_all = self.smartprix_spec()
         data_all = []
         for phone_spec in spec_all:
-            data = {"Name": phone_spec[0], "Price": phone_spec[1], "Connectivity": phone_spec[2], "Processor": phone_spec[3], "Memory": phone_spec[4],
-                    "Battery": phone_spec[5], "Display": phone_spec[6], "Camera": phone_spec[7], "External Storage": phone_spec[8], "Operating System": phone_spec[9]}
+            data = {
+                "Name": phone_spec[0],
+                "Price": phone_spec[1],
+                "Connectivity": phone_spec[2],
+                "Processor": phone_spec[3],
+                "Memory": phone_spec[4],
+                "Battery": phone_spec[5],
+                "Display": phone_spec[6],
+                "Camera": phone_spec[7],
+                "External Storage": phone_spec[8],
+                "Operating System": phone_spec[9]
+            }
             data_all.append(data)
         with open('data.json', 'w', encoding='utf-8') as f:
             json.dump(data_all, f, ensure_ascii=False, indent=4)

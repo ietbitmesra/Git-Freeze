@@ -43,8 +43,8 @@ class Spec:
                 "Operating System": phone_spec[9]
             }
             data_all.append(data)
-        with open('data.json', 'w', encoding='utf-8') as f:
-            json.dump(data_all, f, ensure_ascii=False, indent=4)
+        with open('data.json', 'w', encoding='utf-8') as data_file:
+            json.dump(data_all, data_file, ensure_ascii=False, indent=4)
 
     def read_config(self):
         config = configparser.ConfigParser(allow_no_value=True)

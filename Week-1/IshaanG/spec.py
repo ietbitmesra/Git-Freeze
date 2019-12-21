@@ -52,4 +52,5 @@ class Spec:
         return config
 
 
-Spec().save_json()
+if __name__ == "__main__":
+    Spec().save_json()

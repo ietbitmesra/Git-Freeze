@@ -42,4 +42,5 @@ class TrackPrice:
                             message.encode("utf8"))
 
 
-TrackPrice().low_price()
+if __name__ == "__main__":
+    TrackPrice().low_price()

@@ -9,15 +9,15 @@ The service should support following endpoints:
 
 | Method | Endpoint | Parameter(s) | Description | Should handle|
 |--------| ---------|--------------|-------------|--------------|
-|GET | /start| browser, url| Starts the **browser** which has the **url** open inside it.| Chrome and Firefox|
-|GET|/stop|browser|Kills the **browser**|Chrome and Firefox
-|GET|/cleanup|browser|Deletes all the browser session information such as history, cache, cookies, downloads, saved passwords, etc for **browser**|Chrome or Firefox
-|GET|/geturl|browser|Returns the currently active tab’s URL. Assume **browser** has exactly one window and one tab open.|Chrome and Firefox|
+|GET | /start| browser, url| Starts the < browser > which has the < url > open inside it.| Chrome and Firefox|
+|GET|/stop|browser|Kills the < browser >|Chrome and Firefox
+|GET|/cleanup|browser|Deletes all the browser session information such as history, cache, cookies, downloads, saved passwords, etc for < browser >|Chrome or Firefox
+|GET|/geturl|browser|Returns the currently active tab’s URL. Assume < browser > has exactly one window and one tab open.|Chrome and Firefox|
 
 
 NOTE:   
-1.  **browser** = chrome/firefox
-2.  **url** = Any valid URL like: http://www.medium.com
+1.  < browser > = chrome/firefox
+2.  < url > = Any valid URL like: http://www.medium.com
 
 Example usage of endpoints: 
 > `http://<server>/start?browser=<browser>&url=<url>`

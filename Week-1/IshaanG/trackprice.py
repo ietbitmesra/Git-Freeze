@@ -7,9 +7,9 @@ import ssl
 class TrackPrice:
     def __init__(self):
         self.config = spec.Spec().read_config()
-        self.current_price = self.getCurrentPrice()
+        self.current_price = self.get_current_price()
 
-    def getCurrentPrice(self):
+    def get_current_price(self):
         specs = spec.Spec()
         spec_all = specs.smartprix_spec()
         current_price = []
@@ -19,7 +19,7 @@ class TrackPrice:
 
     def low_price(self):
         while True:
-            new_price = self.getCurrentPrice()
+            new_price = self.get_current_price()
             i = 0
             for old, new in zip(self.current_price, new_price):
                 if (new < old):
@@ -32,7 +32,7 @@ class TrackPrice:
         message = f"""\
         Subject: Price drop for {self.config.items('Mobile Phones')[mobile][0]}
 
-        Current price {self.getCurrentPrice()[mobile]}"""
+        Current price {self.get_current_price()[mobile]}"""
         context = ssl.create_default_context()
         with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
             server.login(self.config['Emails']['sender email'], self.config['Emails']['sender password'])

@@ -19,10 +19,10 @@ class Spec:
             spec = []
             spec.append(phone_name)
             spec.append(minimum_price)
-            for sp in soup.find('ul', class_='pros').find_all('span'):
-                spec.append(sp.text.replace('\u2009', ''))
-            for sp in soup.find('ul', class_='cons').find_all('span'):
-                spec.append(sp.text.replace('\u2009', ''))
+            for span in soup.find('ul', class_='pros').find_all('span'):
+                spec.append(span.text.replace('\u2009', ''))
+            for span in soup.find('ul', class_='cons').find_all('span'):
+                spec.append(span.text.replace('\u2009', ''))
             spec_all.append(spec)
         return spec_all
 

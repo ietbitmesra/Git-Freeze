@@ -91,12 +91,14 @@ def runn_multiple_times():
     value_2=int(value_2)
     
     #Reading and reading values in "price_at_each_run.csv" for price checking and email on price drop
-    with open('price_at_each_run.csv','r+') as read_file:
+    with open('price_at_each_run.csv','a+') as read_file:
+        read_file.seek(0)
         csv_reader=csv.reader(read_file, delimiter=',')
+        hell=[]
         hell=list(csv_reader)
         
         if(len(hell)!=0): #email if iphone price drops
-            if(int(hell[-1][0])>value_1):
+            if(int(hell[-2][0])>value_1):
                 conn=smtplib.SMTP('smtp.gmail.com:587') # smtp address and port
                 conn.ehlo()
                 conn.starttls() # starts tls encryption. When we send our password it will be encrypted.
@@ -105,7 +107,7 @@ def runn_multiple_times():
                 conn.quit()	
     
     
-            if(int(hell[-1][1])>value_2): #email if oneplus price drops
+            if(int(hell[-2][1])>value_2): #email if oneplus price drops
                 conn=smtplib.SMTP('smtp.gmail.com:587') # smtp address and port
                 conn.ehlo()
                 conn.starttls() # starts tls encryption. When we send our password it will be encrypted.
@@ -114,6 +116,7 @@ def runn_multiple_times():
                 conn.quit()	
            
         else:
+            read_file.seek(0,2)
             csv_writer=csv.writer(read_file, delimiter=',')
             csv_writer.writerow(['Prev_Price_iphone','Prev_Price_oneplus','Date_Time'])
         

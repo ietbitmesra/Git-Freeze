@@ -1,5 +1,5 @@
 {
-"Apple iPhone 11" : {
+"Apple iPhone 11": {
     "Architecture": "64 bit",
     "Aspect Ratio": "19.5:9",
     "Audio Features": "Dolby Atmos, Dolby Digital, Dolby Digital Plus",
@@ -51,8 +51,8 @@
     "Screen Size": "6.1 inches (15.49 cm)",
     "Screen to Body Ratio (calculated)": "79.79 %",
     "Sensor": "Exmor-RS CMOS Sensor",
-    "Settings": "Exposure compensation, ISO control",
-    "Shooting Modes": "Continuos Shooting, High Dynamic Range mode (HDR), Burst mode",
+    "Settings": "Exposure compensation, ISO contentrol",
+    "Shooting Modes": "contentinuos Shooting, High Dynamic Range mode (HDR), Burst mode",
     "Stereo Speakers": "Yes",
     "Thickness": "8.3 mm",
     "Touch Screen": "3D Touch Touchscreen, Multi-touch",
@@ -79,12 +79,12 @@
 }
 
 ,
-"OnePlus 7T Pro" : {
+"OnePlus 7T Pro": {
     "Architecture": "64 bit",
     "Aspect Ratio": "19.5:9",
     "Audio Features": "Dolby Atmos",
     "Audio Jack": "USB Type-C",
-    "Autofocus": "Phase Detection autofocus, Continuos autofocus, Laser autofocus",
+    "Autofocus": "Phase Detection autofocus, contentinuos autofocus, Laser autofocus",
     "Battery": "4085 mAh",
     "Bezel-less display": "Yes",
     "Bluetooth": "v5.0",
@@ -133,8 +133,8 @@
     "Screen Size": "6.67 inches (16.94 cm)",
     "Screen to Body Ratio (calculated)": "88.3 %",
     "Sensor": "Exmor RS",
-    "Settings": "Exposure compensation, ISO control",
-    "Shooting Modes": "Continuos Shooting, High Dynamic Range mode (HDR)",
+    "Settings": "Exposure compensation, ISO contentrol",
+    "Shooting Modes": "contentinuos Shooting, High Dynamic Range mode (HDR)",
     "Thickness": "8.8 mm",
     "Touch Screen": "Capacitive Touchscreen, Multi-touch",
     "Type": "Li-ion",
@@ -159,7 +159,7 @@
 }
 
 ,
-"Nokia 3310 New" : {
+"Nokia 3310 New": {
     "Audio Jack": "3.5 mm",
     "Autofocus": "No",
     "Battery": "1200 mAh",
@@ -218,12 +218,12 @@
 }
 
 ,
-"OnePlus 7T" : {
+"OnePlus 7T": {
     "Architecture": "64 bit",
     "Aspect Ratio": "20:9",
     "Audio Features": "Dolby Atmos",
     "Audio Jack": "USB Type-C",
-    "Autofocus": "Phase Detection autofocus, Continuos autofocus",
+    "Autofocus": "Phase Detection autofocus, contentinuos autofocus",
     "Battery": "3800 mAh",
     "Bezel-less display": "with waterdrop notch",
     "Bluetooth": "v5.0",
@@ -271,8 +271,8 @@
     "Screen Size": "6.55 inches (16.64 cm)",
     "Screen to Body Ratio (calculated)": "86.53 %",
     "Sensor": "Exmor RS",
-    "Settings": "Exposure compensation, ISO control",
-    "Shooting Modes": "Continuos Shooting, High Dynamic Range mode (HDR)",
+    "Settings": "Exposure compensation, ISO contentrol",
+    "Shooting Modes": "contentinuos Shooting, High Dynamic Range mode (HDR)",
     "Thickness": "8.1 mm",
     "Touch Screen": "3D Touch Touchscreen, Multi-touch",
     "Type": "Li-ion",

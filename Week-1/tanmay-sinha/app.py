@@ -96,10 +96,11 @@ class PhoneDetails():
             with open("phone_details.json", "w+") as myfile:
                 if flag == 1:
                     content = content[:-1]
-                    content = content + '\n,\n'+f'"{self.phone_name}" : \
+                    content = content + '\n,\n' + f'"{self.phone_name}" :\
                     ' + self.jsonstr + '\n}'
                 else:
-                    content = '{\n'+f'"{self.phone_name}": '+self.jsonstr+'\n}'
+                    content = '{\n' + f'"{self.phone_name}": ' \
+                        + self.jsonstr + '\n}'
                 myfile.write(content)
         else:
             print("You already have the phone details")
@@ -112,12 +113,12 @@ class PhoneDetails():
         filepath = os.getcwd()
         try:
             # for windows
-            os.startfile(filepath+'/phone_details.json')
+            os.startfile(filepath + '/phone_details.json')
         except:
             # for linux
             try:
                 opener = "open" if sys.platform == "darwin" else "xdg-open"
-                subprocess.call([opener, filepath+'/phone_details.json'])
+                subprocess.call([opener, filepath + '/phone_details.json'])
             except NotImplementedError:
                 pass
 
@@ -161,7 +162,7 @@ class PhoneDetails():
         for item in range(len(prices)):
             store = stores[item]['alt']
             price = prices[item].get_text().replace("\n", "")
-            price = int(price[price.find(' ')+1:-3].replace(",", ""))
+            price = int(price[price.find(' ') + 1:-3].replace(",", ""))
             # checking the minimum price.
             if price < self.min_price:
                 self.min_price = price

@@ -48,7 +48,7 @@ Email Notification :-<br>
 
 ![Email notification](./images/Screenshot_from_2019-12-19_21-20-41.png)
 
-## contentributing
+## contributing
 
 You can add features like multiple phones price , specs comparision etc .
-Feel free to contentact me at <alokratn001@gmail.com> for any suggestions .
+Feel free to contact me at <alokratn001@gmail.com> for any suggestions .

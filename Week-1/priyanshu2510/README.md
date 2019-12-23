@@ -26,7 +26,8 @@ Modify the usersender.json file by adding details of sender and receiver
 To get notified on price drops configure the sender email and enable permission for less secure apps.
 Start the kernel and run all.
 
-# ![Image](images/Screenshot from 2019-12-23 15-42-46.png)
+ ![Image of]
+ (images/Screenshot from 2019-12-23 15-42-46.png)
 
 ## Author
 

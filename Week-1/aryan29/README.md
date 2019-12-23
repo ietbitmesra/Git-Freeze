@@ -10,7 +10,7 @@ The program initially comes with a "user_config.json" file in which you can add 
 python api.py -j
 ```
 You can add mysmartprice code too as a second code for keeping track of best price from both of the websites
-![Example UserConfig.json](https://github.com/aryan29/Git-Freeze/blob/aryan29/week1/Week-1/aryan29/images/user_config.png)
+![Example UserConfig.json](images/user_config.png)
 ## Generating Codes from Smartprix and MySmartPrice
 You can get smartprix code directly form your terminal
 ```python
@@ -20,10 +20,10 @@ You can also use their website too to get the link
 
 As shown below:-    
 Getting Link from Smartprix    
-![Getting Link from Smartprix](https://github.com/aryan29/Git-Freeze/blob/aryan29/week1/Week-1/aryan29/images/mysmartprixcode.png)    
+![Getting Link from Smartprix](images/mysmartprixcode.png)    
 
 Getting Link from MySmartprice    
-![Getting Link from MySmartprice](https://github.com/aryan29/Git-Freeze/blob/aryan29/week1/Week-1/aryan29/images/mysmartpricecode.png)
+![Getting Link from MySmartprice](images/mysmartpricecode.png)
 ## Setting Up Server
 Setup comes with a file called keeptrack.py which you can run infiniely on your system for keep receiving regular updates for linux systems just run this command
 ```python
@@ -37,7 +37,7 @@ Windows user can make use of Microsoft Task Scheduler to do the Same
 We get you the JSON of features Any Number of Mobiles in just  a single Click    
 
 Example JSON file Generated    
-![Example JSON file Generated](https://github.com/aryan29/Git-Freeze/blob/aryan29/week1/Week-1/aryan29/images/data(json).png)
+![Example JSON file Generated](images/data(json).png)
 We get you the best price of mobile by making use of the websites like [Smartprix](https://www.smartprix.com/) and [MySmartPrice](https://www.mysmartprice.com/) which compares price of mobile from various stores like Amazon,Flipkart,Ebay,Shopclues and various others   
 
 For Smartprix there is no need to get the code as well we can do that for you by a single click

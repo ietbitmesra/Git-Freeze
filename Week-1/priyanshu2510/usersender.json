@@ -1,0 +1,7 @@
+[
+    {
+        "sender_mail": "username@gmail.com",
+        "sender_password": "password123",
+        "receiver_email": ["abc1@gmail.com","abc2@gmail.com"]
+    }
+]

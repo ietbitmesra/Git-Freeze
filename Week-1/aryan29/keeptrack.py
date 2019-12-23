@@ -1,16 +1,14 @@
-import time,json
-import smtplib
-from termcolor import colored,cprint
+import time
+import json
 import requests
-from datetime import datetime,timedelta
+import smtplib
+from termcolor import cprint
 from api import Api
-dateIndex=datetime.now()
 with open("user_config.json","r") as f:
     conf=json.load(f)
-
     if(conf["sender_email"]=="" or conf["sender_password"]=="" or len(conf["receiver_email"])==0):
         cprint("Please Make sure to Enter Sender_Email, Receiver_Email and Sender_Password for Gmail before continuing",'red')
-        exit(0)
+        sys.exit()
 
 def keeptrack():
     with open("data.json","r") as f:
@@ -63,5 +61,4 @@ if __name__ == "__main__":
         keeptrack()
         if(c%8==1):
             checkserver()    #1day updates
-        time.sleep(updation_time)
         time.sleep(updation_time)

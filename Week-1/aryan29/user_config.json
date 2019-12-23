@@ -1,9 +1,9 @@
 {
-    "sender_email": "nk28agra@gmail.com",
-    "sender_password": "Illfind999soon",
+    "sender_email": "admin@gmail.com",
+    "sender_password": "password",
     "receiver_email": [
-        "nk@gmail.com",
-        "nk25agra@gmail.com"
+        "aaa@gmail.com",
+        "bbb@gmail.com"
     ],
     "telegram_bot_token": "",
     "telegram_chatID": "",

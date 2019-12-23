@@ -1,13 +1,13 @@
+import sys
+import json
 import requests
 import bs4
-import sys
-from termcolor import colored,cprint
-import json
+from termcolor import cprint
 with open("user_config.json","r") as f:
     conf=json.load(f)
     if(len(conf["mob"])==0):
         cprint("Please Configure your user_config.json file and add Code of Atleast 1 mobile Phone to generate json",'red')
-        exit(0)
+        sys.exit()
 class Api:
     def get_data(self,mob):
         b=requests.get(f"https://www.smartprix.com/mobiles/{mob[0]}")

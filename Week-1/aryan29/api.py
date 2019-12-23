@@ -22,26 +22,27 @@ class Api:
                 )
             soup2 = bs4.BeautifulSoup(req2.text, 'lxml')
             price2 = soup2.select(".prdct-dtl__prc-val")[0]
-            price = self.getminprice(price2, price1)
+            price = self.get_min_price(price2, price1)
         except Exception as ex:
             price = price1
         myList = soup1.select(".has-favorite-button , .cons span , .pros span")
         myList.append(price)
         return myList
 
-    def getminprice(self, price1, price2):
+    @staticmethod
+    def get_min_price(price1, price2):
         # print((price1.getText()),price2.getText()[1:])
         if ((price1.getText(), 10) < (price2.getText()[1:], 10)):
             return price1
         else:
             return price2
 
-    def name_data(self, mob, code):
+    @staticmethod
+    def name_data(mob, code):
         myList = []
         for spec in mob:
             myList.append(spec.getText()
                           .replace('\u2009', ' ').replace('\u20b9', ''))
-
         # print(List)
         myDict = {"name": myList[0],
                   "RAM/Internal Storage": myList[3],

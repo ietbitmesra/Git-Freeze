@@ -24,7 +24,7 @@ def keeptrack():
         newPrice = get_current_price(mobile['Code'])
         print(oldPrice, newPrice)
         if (newPrice < oldPrice):
-            message = (f"Best Price of {name} has changed from{oldPrice}"
+            message = (f"Best Price of {name} has changed from {oldPrice}"
                        f"to {newPrice} at {time.ctime(time.time())}")
             send_email(message)
             telegram_alert(message)

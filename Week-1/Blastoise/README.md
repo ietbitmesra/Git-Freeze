@@ -8,13 +8,11 @@ Clone the project on you local machine. The main file is " Web_scrapper.py " whi
 
 ## Prerequisites
 
-You need to install the modules mentioned below for running of the code(just type in these commands in bash/command prompt)
+First you need to install the modules needed for running of the code which are in the requirements.txt file.(just type in this command in your bash/command prompt)
 
 ```
-   pip3 install requests
-   pip3 install bs4
-   pip3 install smtplib
-   
+pip3 install -r requirements.txt
+
 ```
 ## Usage 
 
@@ -30,11 +28,11 @@ https://support.google.com/cloudidentity/answer/6260879?hl=en
 Now after doing all these steps,we are ready to run our application.
 For running the application you need to run the following command in cmd/bash
 ```
-Web_scrapper.py
+python3 Web_scrapper.py
 
 ```
 The output will be provided in a file named "Compare.json".
-The application compares the current price of the phone and price of the phone at previous run which is stored in "price_at_each_run.csv" file every minute  
+The application compares the current price of the phone and price of the phone at previous run which is stored in "price_at_each_run.csv" file every minute.  
 
 ## Built with
 -Python3.7.4

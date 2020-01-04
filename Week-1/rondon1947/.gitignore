@@ -1,0 +1,6 @@
+# Environments
+venv/
+
+# Generated Files
+.idea
+

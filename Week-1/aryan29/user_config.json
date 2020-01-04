@@ -1,0 +1,23 @@
+{
+    "sender_email": "admin@gmail.com",
+    "sender_password": "password",
+    "receiver_email": [
+        "aaa@gmail.com",
+        "bbb@gmail.com"
+    ],
+    "telegram_bot_token": "",
+    "telegram_chatID": "",
+    "mob": {
+        "1": [
+            "apple-iphone-11-ppd17p0q4s2c",
+            "apple-iphone-xir-msp15688"
+        ],
+        "2": [
+            "oneplus-7t-pro-ppd16isrkf1u",
+            "oneplus-7t-pro-msp15861"
+        ],
+        "3": [
+            "asus-zenfone-max-pro-m1-p11010rm1y0x"
+        ]
+    }
+}

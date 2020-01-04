@@ -1,0 +1,25 @@
+{
+    "phones" : [
+        {
+            "name" : "Iphone 11",
+            "ram" : "4gb",
+            "storage" : "64gb",
+            "processor" : "Apple A13 Bionic",
+            "camera" : "Dual-camera system with 12MP Ultra Wide and Wide cameras; Night mode, Portrait mode, and 4K video up to 60fps",
+            "os" : "iOS 13",
+            "connectivity" : "Wi-Fi 802.11 Bluetooth 5.0 NFC enabled",
+            "price" : "Rs. 64,900"
+        },
+        {
+            "name" : "OnePlus 7T Pro",
+            "ram" : "8gb",
+            "storage" : "256gb",
+            "processor" : "Qualcomm Snapdragon 855",
+            "camera" : " 16MP popup selfie camera; Triple rear camera setup ,primary camers is 48-megapixel,The other two are telephoto and wide lens and are 12 and 16 megapixel respectively", 
+            "os" : "Oxygen OS based on Android v10 ",
+            "connectivity" : "Wi-Fi 802.11 Bluetooth 5.0 NFC enabled",
+            "price" : "Rs. 53,999"
+        }
+    ]
+
+}

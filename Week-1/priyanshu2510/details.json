@@ -1,0 +1,28 @@
+[
+    {
+        "Id": "512",
+        "url": "https://www.flipkart.com/apple-iphone-11-black-128-gb/p/itm06bac28995200?pid=MOBFKCTSYAPWYFJ5&lid=LSTMOBFKCTSYAPWYFJ580EM6T&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=27901d67-02bc-4f1b-83d8-39517d982ed5.MOBFKCTSYAPWYFJ5.SEARCH&ppt=HomePage&ppn=Home&ssid=tt92tjxcc00000001577088108526&qH=f6cdfdaa9f3c23f3",
+        "Name": "Iphone 11",
+        "Price": "₹69,900",
+        "Operating System": "IOS v11",
+        "Internal Storage": "128 GB",
+        "Camera Front": "12MP+1.1fs",
+        "Camera Back": "15MP+1.1fs",
+        "Connectivity": "Dual Sim, 3G, 4G, VoLTE, Wi-Fi, NFC",
+        "Battery Power": "3100 mah",
+        "SD Card": "Not supported"
+    },
+    {
+        "Id": "513",
+        "url": "https://www.flipkart.com/realme-x2-pro-lunar-white-256-gb/p/itma3203d88190a3?pid=MOBFM2WZ5JEKKM9T&lid=LSTMOBFM2WZ5JEKKM9TIIU9OC&marketplace=FLIPKART&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_0_5_na_na_pr&otracker1=AS_QueryStore_OrganicAutoSuggest_0_5_na_na_pr&fm=SEARCH&iid=99ab2085-19dd-479e-a052-6e68e2099b7b.MOBFM2WZ5JEKKM9T.SEARCH&ppt=ProductPage&ppn=ProductPage&ssid=87wgoyxdww0000001577088143453&qH=241605f1c9ce7991",
+        "Name": "OnePlus 7T Pro",
+        "Price": "₹33,999",
+        "Operating System": "Oxygen OS 10.10",
+        "Internal Storage": "256 GB",
+        "Camera Front": "15MP+1.3fs",
+        "Camera Back": "20MP+1.1fs",
+        "Connectivity": "Dual Sim, 3G, 4G, VoLTE, Wi-Fi, NFC",
+        "Battery Power": "4000 mah",
+        "SD Card": "Not supported"
+    }
+]

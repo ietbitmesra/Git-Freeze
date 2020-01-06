@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: mapped-config
+Version: 2.36
+Summary: Mapped config loader for python for secure, easy and modular configuration management
+Home-page: https://github.com/maxpowel/mapped_config
+Author: Alvaro Garcia Gomez
+Author-email: maxpowel@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/maxpowel/mapped_config/archive/master.zip
+Keywords: config,configuration,yml,json
+Platform: UNKNOWN
+Classifier: Topic :: Adaptive Technologies
+Classifier: Topic :: Software Development
+Classifier: Topic :: System
+Classifier: Topic :: Utilities
+Requires-Dist: Cerberus (==1.2)
+Requires-Dist: PyYAML (==3.12)
+Requires-Dist: six (==1.11.0)
+
+UNKNOWN
+
+

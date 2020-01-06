@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: apscheduler-bundle
+Version: 1.1.2
+Summary: APScheduler support for applauncher
+Home-page: https://github.com/applauncher-team/apscheduler_bundle
+Author: Alvaro Garcia Gomez
+Author-email: maxpowel@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/applauncher-team/apscheduler_bundle
+Keywords: applauncher,apscheduler,scheduler
+Platform: UNKNOWN
+Classifier: Topic :: Adaptive Technologies
+Classifier: Topic :: Software Development
+Classifier: Topic :: System
+Classifier: Topic :: Utilities
+Requires-Dist: applauncher
+Requires-Dist: apscheduler
+
+UNKNOWN
+
+

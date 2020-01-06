@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: applauncher
+Version: 1.44
+Summary: App launcher and base environment
+Home-page: https://github.com/applauncher-team/applauncher
+Author: Alvaro Garcia Gomez
+Author-email: maxpowel@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/applauncher-team/applauncher/archive/master.zip
+Keywords: environment,launcher,kernel,event,base
+Platform: UNKNOWN
+Classifier: Topic :: Adaptive Technologies
+Classifier: Topic :: Software Development
+Classifier: Topic :: System
+Classifier: Topic :: Utilities
+Requires-Dist: Inject
+Requires-Dist: blinker
+Requires-Dist: colorlog
+Requires-Dist: mapped-config
+
+UNKNOWN
+
+

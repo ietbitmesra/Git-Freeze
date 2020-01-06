@@ -1,0 +1,8 @@
+{
+    "sender_mail":"abc@gmail.com",
+    "sender_password":"password",
+    "receiver_mails": [
+        "receiver1@gmail.com",
+        "receiver2@gmail.com"
+    ]
+}

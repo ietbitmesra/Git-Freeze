@@ -1,0 +1,117 @@
+{"Price":"64,900"
+
+"In The Box":"Handset, EarPods with Lightning Connector, Lightning to USB Cable, USB Power Adapter, Documentation"
+
+"Model Number":"MWLT2HN/A"
+
+"Model Name":"iPhone 11"
+
+"Color":"Black"
+
+"Browse Type":"Smartphones"
+
+"SIM Type":"Dual Sim"
+
+"Hybrid Sim Slot":"No"
+
+"Touchscreen":"Yes"
+
+"OTG Compatible":"No"
+
+"SAR Value":"1.6 W/kg (over 1 g) SAR Limit, Head: 1.09, Body: 1.18"
+
+"Display Size":"15.49 cm (6.1 inch)"
+
+"Resolution":"1792 x 828 Pixels"
+
+"Resolution Type":"Liquid Retina HD Display"
+
+"Other Display Features":"1400:1 Contrast Ratio (Typical), True Tone Display, Wide Colour Display (P3), Haptic Touch, 625 nits Max Brightness (Typical), Fingerprint Resistant Oleophobic Coating, Support for Display of Multiple Languages and Characters Simultaneously"
+
+"Operating System":"iOS 13"
+
+"Processor Type":"A13 Bionic Chip"
+
+"Internal Storage":"64 GB"
+
+"Primary Camera Available":"Yes"
+
+"Primary Camera":"12MP + 12MP"
+
+"Primary Camera Features":"Dual 12MP Ultra Wide and Wide Cameras, Ultra Wide: f/2.4 Aperture and 120Degree Field of View, Wide: f/1.8 Aperture, Portrait Mode with Advanced Bokeh and Depth Control, Portrait Lighting with Six Effects (Natural, Studio, Contour, Stage, Stage Mono, High-key Mono), Optical Image Stabilisation (Wide), Five Element Lens (Ultra Wide), Six Element Lens (Wide), Brighter True Tone Flash with Slow Sync, Panorama (Up to 64MP), 100% Focus Pixels (Wide), Night Mode, Auto Adjustments, Next-generation Smart HDR for Photos, Wide Colour Capture for Photos and Live Photos, Advanced Red Eye Correction, Auto Image Stabilisation, Burst Mode, Photo Geotagging, Image Formats Captured: HEIF and JPEG"
+
+"Optical Zoom":"Yes"
+
+"Secondary Camera Available":"Yes"
+
+"Secondary Camera":"12MP"
+
+"Secondary Camera Features":"TrueDepth Camera - 12MP Camera, f/2.2 Aperture, Portrait Mode with Advanced Bokeh and Depth Control, Portrait Lighting with Six Effects (Natural, Studio, Contour, Stage, Stage Mono, High Key Mono), Animoji and Memoji, 4K Video Recording at 24 fps, 30 fps or 60 fps, 1080p HD Video Recording at 30 fps or 60 fps, Slow-motion Video Support for 1080p at 120 fps, Next Generation Smart HDR for Photos, Extended Dynamic Range for Video at 30 fps, Cinematic Video Stabilisation (4K, 1080p and 720p), Wide Colour Capture for Photos and Live Photos, Retina Flash, Auto Image Stabilisation, Burst Mode"
+
+"Flash":"Rear Brighter True Tone Flash with Slow Sync and Front Retina Flash"
+
+"HD Recording":"Yes"
+
+"Full HD Recording":"Yes"
+
+"Video Recording":"Yes"
+
+"Frame Rate":"Rear Camera - 4K Video Recording at 24 fps, 30 fps or 60 fps, 1080p HD Video Recording at 30 fps or 60 fps, 720p HD Video Recording at 30 fps, Extended Dynamic Range for Video upto 60 fps, Slow-motion Video Support for 1080p at 120 fps or 240 fps | True Depth Camera - 4K Video Recording at 24 fps, 30 fps or 60 fps, 1080p HD Video Recording at 30 fps or 60 fps, Slow-motion Video Support for 1080p at 120 fps, Extended Dynamic Range for Video at 30 fps fps"
+
+"Dual Camera Lens":"Primary Camera"
+
+"Phone Book":"Yes"
+
+"Speaker Phone":"Yes"
+
+"Network Type":"4G VOLTE, 4G, 3G, 2G"
+
+"Supported Networks":"4G VoLTE, 4G LTE, UMTS, GSM"
+
+"Internet Connectivity":"4G, 3G, Wi-Fi"
+
+"3G":"Yes"
+
+"Pre-installed Browser":"Safari"
+
+"Bluetooth Support":"Yes"
+
+"Bluetooth Version":"5"
+
+"Wi-Fi":"Yes"
+
+"Wi-Fi Version":"802.11ax Wi-Fi 6 with 2x2 MIMO"
+
+"Wi-Fi Hotspot":"Yes"
+
+"NFC":"Yes"
+
+"Smartphone":"Yes"
+
+"SIM Size":"Nano SIM and eSIM"
+
+"Removable Battery":"No"
+
+"Graphics PPI":"326 PPI"
+
+"Sensors":"Face ID, Barometer, Three Axis Gyro, Accelerometer, Proximity Sensor, Ambient Light Sensor"
+
+"Supported Languages":"Multi Languages Support"
+
+"Series":"iPhone 11"
+
+"Other Features":"Faster Face ID, Slo-mo Selfies, Water Resistant upto 2 Metres for up to 30 Minutes\ufffd"
+
+"Audio Formats":"AAC LC, HE AAC, HE AAC v2, Protected AAC, MP3, Linear PCM, Apple Lossless, FLAC, Dolby Digital (AC 3), Dolby Digital Plus (E AC 3), Dolby Atmos and Audible (Formats 2, 3, 4, Audible Enhanced Audio, AAX and AAX+)"
+
+"Video Formats":"HEVC, H.264, MPEG 4 Part 2 and Motion JPEG, Supports Dolby Vision and HDR10 Content"
+
+"Width":"75.7 mm"
+
+"Height":"150.9 mm"
+
+"Depth":"8.3 mm"
+
+"Weight":"194 g"
+
+"Warranty Summary":"Brand Warranty for 1 Year"}

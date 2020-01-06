@@ -1,0 +1,141 @@
+{"Price":"52,900"
+
+"In The Box":"Handset, Warp Charge 30 Power Adapter, Warp Type-C Cable (Support USB 2.0), Quick Start Guide, Welcome Letter, Safety Information and Warranty Card, Logo Sticker, Case, Screen Protector (pre-applied), SIM Tray Ejector"
+
+"Model Number":"hd1911"
+
+"Model Name":"7T Pro"
+
+"Color":"Haze Blue"
+
+"Browse Type":"Smartphones"
+
+"SIM Type":"Dual Sim"
+
+"Hybrid Sim Slot":"No"
+
+"Touchscreen":"Yes"
+
+"OTG Compatible":"Yes"
+
+"Display Size":"16.94 cm (6.67 inch)"
+
+"Resolution":"3120 x 1440$$Pixels"
+
+"Resolution Type":"Quad HD+"
+
+"GPU":"Adreno 640"
+
+"Other Display Features":"Video Enhancer\nReading mode\nNight mode"
+
+"Operating System":"Android Pie 10"
+
+"Processor Type":"Qualcomm\u00ae\u00a0Snapdragon\u2122\u00a0855 Plus (Octa-core, 7nm, up to 2.96 GHz) , with Qualcomm AI Engine"
+
+"Processor Core":"Octa Core"
+
+"Primary Clock Speed":"2.96 GHz"
+
+"Internal Storage":"256 GB"
+
+"RAM":"8 GB"
+
+"Memory Card Slot Type":"Dedicated Slot"
+
+"Primary Camera Available":"Yes"
+
+"Primary Camera":"48MP + 8MP"
+
+"Primary Camera Features":"UltraShot, Nightscape, Portrait, Pro Mode, Panorama, HDR, AI Scene Detection, RAW Image"
+
+"Optical Zoom":"Yes"
+
+"Secondary Camera Available":"Yes"
+
+"Secondary Camera":"16MP"
+
+"Secondary Camera Features":"Face Unlock, HDR, Screen Flash, Face Retouching"
+
+"Flash":"Front & Back Flash"
+
+"HD Recording":"Yes"
+
+"Full HD Recording":"Yes"
+
+"Dual Camera Lens":"Primary Camera"
+
+"Call Wait/Hold":"Yes"
+
+"Conference Call":"Yes"
+
+"Video Call Support":"Yes"
+
+"Call Divert":"Yes"
+
+"Phone Book":"Yes"
+
+"Speaker Phone":"Yes"
+
+"Speed Dialing":"Yes"
+
+"Network Type":"4G VOLTE"
+
+"Supported Networks":"4G LTE"
+
+"Internet Connectivity":"GSM, (B2/3/5/8), CDMA, (BC0/BC1), 4G, FDD-LTE, (B1/2/3/4/5/7/8/12/13/17/18/19/20/26/28/29), TDD-LTE, (B34/38/39/40/41), Bluetooth 5.0 support aptX/HD/LDAC/AAC, TDS, (B34/B39), NFC enabled, WiFi, 2x2 MIMO, Wi-Fi 802.11 a/b/g/n/ac/2.4G/5G, UMTS:B1/2/4/5/8/9/19"
+
+"Bluetooth Support":"Yes"
+
+"Bluetooth Version":"5"
+
+"Wi-Fi":"Yes"
+
+"Wi-Fi Version":"2x2 MIMO, Wi-Fi 802.11 a/b/g/n/ac, 2.4G/5G"
+
+"Wi-Fi Hotspot":"Yes"
+
+"USB Tethering":"Yes"
+
+"USB Connectivity":"Yes"
+
+"Smartphone":"Yes"
+
+"Touchscreen Type":"AMOLED"
+
+"SIM Size":"Nano"
+
+"Keypad Type":"QWERTY"
+
+"Removable Battery":"No"
+
+"SMS":"Yes"
+
+"Keypad":"No"
+
+"Voice Input":"Yes"
+
+"Graphics PPI":"402 ppi"
+
+"Predictive Text Input":"Yes"
+
+"Sensors":"In-display Fingerprint Sensor, Accelerometer, Electronic Compass, Gyroscope, Ambient Light Sensor, Proximity Sensor, Sensor Core, Laser Sensor"
+
+"Audio Formats":"MP3, AAC, AAC+, WMA, AMR-NB, AMR-WB, WAV, FLAC, APE, OGG, MID, M4A, IMY, AC3, EAC3, EAC3-JOC, AC4\nRecording: WAV, AAC, AMR"
+
+"Video Formats":"MKV, MOV, MP4, H.265(HEVC), AVI, WMV, TS, 3GP, FLV, WEBM"
+
+"Battery Capacity":"4085 mAh"
+
+"Battery Type":"lithium-ion\u00a0"
+
+"Width":"75.9 mm"
+
+"Height":"162.6 mm"
+
+"Depth":"8.8 mm"
+
+"Weight":"206 g"
+
+"Warranty Summary":"1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase"
+
+"Covered in Warranty":"1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase"}

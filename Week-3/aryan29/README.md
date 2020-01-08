@@ -18,12 +18,18 @@ It Includes Various Features:-
 * Various Attractive Themes(Blacko,Whity and Gyona)
 
 # Screenshots
-![](images/1.png)
-![](images/2.png)
-![](images/3.png)
-![](images/4.png)
-![](images/5.png)
-![](images/6.png)
+![](images/1.png)  
+
+![](images/2.png)  
+
+![](images/3.png)  
+
+![](images/4.png)  
+
+![](images/5.png)  
+
+![](images/6.png)  
+
 
 # Todos
 ##### All these features are coming soon

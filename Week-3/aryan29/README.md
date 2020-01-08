@@ -18,7 +18,7 @@ It Includes Various Features:-
 * Various Attractive Themes(Blacko,Whity and Gyona)
 
 # Screenshots
-Basic UI:-
+Basic UI:-  
 ![](images/1.png)  
 
 Blacko Theme  
@@ -27,13 +27,13 @@ Blacko Theme
 Whity Theme  
 ![](images/3.png)  
 
-Gyona Theme
+Gyona Theme  
 ![](images/4.png)  
 
 Spell Checker at Work  
 ![](images/5.png)  
 
-Example Popup Find Window
+Example Popup Find Window  
 ![](images/6.png)  
 
 

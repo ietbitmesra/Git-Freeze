@@ -82,6 +82,7 @@ class Editor:
     fontColor = "black"
     txt.config(font=str(fontType + ' ' + fontSize))
     currentFile = "No File"
+    spellCheck = 0
 
     def __init__(self):
         self.fileMenu.add_command(
@@ -118,8 +119,18 @@ class Editor:
         self.window.bind_all('<Control-f>', self.find)
         self.viewMenu.add_command(label="Font Size", command=self.font_size)
         self.viewMenu.add_command(label="Speak It", command=self.speak)
-        self.viewMenu.add_command(
-            label="Spell Check", command=self.spell_check)
+        spellMenu = Menu(self.viewMenu)
+
+        def switch_on():
+            self.spellCheck = 1
+
+        def switch_off():
+            self.txt.tag_delete('misspell')
+            self.spellCheck = 0
+
+        spellMenu.add_radiobutton(label="Yes", command=switch_on)
+        spellMenu.add_radiobutton(label="No", command=switch_off)
+        self.viewMenu.add_cascade(label="Spell Checker", menu=spellMenu)
         self.editMenu.add_command(
             label="Replace All", command=self.replace,
             accelerator="Ctrl+Shift+R")
@@ -294,6 +305,8 @@ class Editor:
 
     def redraw(self, event=NONE):
         self.update_count(event)
+        if (self.spellCheck == 1):
+            self.spell_check()
         self.lineNumber.delete("all")
         self.objectIds = []
         si = self.txt.index("@0,0")
@@ -331,7 +344,7 @@ class Editor:
             if startInd:
                 startInd = str(startInd)
                 lastInd = startInd+f'+{len(findString)}c'
-                print(startInd, lastInd)
+                # print(startInd, lastInd)
                 self.txt.tag_add('misspell', startInd, lastInd)
                 startInd = lastInd
 

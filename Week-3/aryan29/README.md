@@ -16,6 +16,7 @@ It Includes Various Features:-
 * Line Number and Word Count Features
 * Changing Font Size, Google Speak and Spell Checker is also Avilable
 * Various Attractive Themes(Blacko,Whity and Gyona)
+* On Typing Spell Checker
 
 # Screenshots
 Basic UI:-  
@@ -42,7 +43,7 @@ Example Popup Find Window
 
 * Adding Font Style Change
 * Directly Send your file to your Email or Google Drive With Single Click
-* On Typing Spell Checker
+* ~~On Typing Spell Checker~~
 * Speech to Text Writer
 * Increase the number of Themes Avilable
 * Improving Find and Relace Options

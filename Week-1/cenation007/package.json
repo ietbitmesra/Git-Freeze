@@ -1,0 +1,19 @@
+{
+  "name": "gitfreeze",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ayush",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "fs": "0.0.1-security",
+    "nodemailer": "^6.4.2",
+    "prompt-sync": "^4.1.7",
+    "request-promise": "^4.2.5" 
+  },
+  "devDependencies": {},
+  "description": ""
+}

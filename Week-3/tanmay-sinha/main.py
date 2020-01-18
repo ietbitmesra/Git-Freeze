@@ -39,6 +39,7 @@ class CustomText(tk.Text):
         self.tk.createcommand(self._w, self._proxy)
 
     def _proxy(self, *args):
+
         cmd = (self._orig,) + args
         try:
             result = self.tk.call(cmd)
@@ -60,7 +61,7 @@ class TextEditor(tk.Frame):
         tk.Frame.__init__(self, *args, **kwargs)
         self.text = CustomText(self)
         self.vsb = tk.Scrollbar(orient="vertical", command=self.text.yview)
-        self.text.configure(yscrollcommand=self.vsb.set)
+        self.text.configure(yscrollcommand=self.vsb.set,undo=True)
         self.text.tag_configure("bigfont", font=("Helvetica", "24", "bold"))
         self.linenumbers = TextLineNumbers(self, width=30)
         self.linenumbers.attach(self.text)
@@ -98,9 +99,6 @@ class TextEditor(tk.Frame):
         self.text.bind('<Alt-F4>', self.close)
         self.text.bind('<Alt-F4>', self.close)
 
-        self.text.bind('<Control-x>', self.cut)
-        self.text.bind('<Control-X>', self.cut)
-
         self.text.bind('<Control-a>', self.select_all)
         self.text.bind('<Control-A>', self.select_all)
 
@@ -133,9 +131,6 @@ class TextEditor(tk.Frame):
 
         self.text.bind('<Control-Shift-c>', self.align_center)
         self.text.bind('<Control-Shift-C>', self.align_center)
-
-        self.text.bind('<Control-z>', self.undo)
-        self.text.bind('<Control-Z>', self.undo)
 
         self.text.bind('<Control-y>', self.redo)
         self.text.bind('<Control-Y>', self.redo)
@@ -182,7 +177,7 @@ class TextEditor(tk.Frame):
 
         # cut
         self.cut_button = Button(name="toolbar_b5", borderwidth=1,
-                                 command=self.cut, width=20, height=20)
+                            command=self.cut,width=20, height=20)
         self.photo_cut = Image.open("icons1/cut.png")
         self.photo_cut = self.photo_cut.resize((18, 18), Image.ANTIALIAS)
         self.image_cut = ImageTk.PhotoImage(self.photo_cut)
@@ -630,9 +625,10 @@ class TextEditor(tk.Frame):
             self.root.destroy()
 
     def cut(self, event=None):
-        root.clipboard_clear()
-        self.text.clipboard_append(string=self.text.selection_get())
-        self.text.delete(index1=SEL_FIRST, index2=SEL_LAST)
+        self.text.clipboard_clear()
+        self.text.clipboard_append(self.text.selection_get())
+        self.text.delete(SEL_FIRST, SEL_LAST)
+        return "break"
 
     def copy(self, event=None):
         print(self.text.index(SEL_FIRST))
@@ -644,13 +640,16 @@ class TextEditor(tk.Frame):
         self.text.insert(INSERT, root.clipboard_get())
 
     def undo(self, event=None):
-        self.text.edit_undo()
+        self.text.event_generate("<<Undo>>")
+        return
 
     def redo(self, event=None):
-        self.text.edit_redo()
-
+        self.text.event_generate("<<Redo>>")
+        return "break"
+        
     def select_all(self, event=None):
         self.text.tag_add(SEL, "1.0", END)
+        return "break"
 
     def delete(self, event=None):
         self.text.delete(index1=SEL_FIRST, index2=SEL_LAST)
@@ -671,16 +670,28 @@ class TextEditor(tk.Frame):
         search_toplevel.resizable(False, False)
         Label(search_toplevel, text="Find All:").grid(
             row=0, column=0, sticky='e')
+        Label(search_toplevel, text="Replace All:").grid(
+            row=1, column=0, sticky='e')
         search_entry_widget = Entry(search_toplevel, width=25)
         search_entry_widget.grid(row=0, column=1, padx=2, pady=2, sticky='we')
         search_entry_widget.focus_set()
-        Button(search_toplevel, text="Ok", underline=0, command=lambda: \
+        search_entry_widget1 = Entry(search_toplevel, width=25)
+        search_entry_widget1.grid(row=1, column=1, padx=2, pady=2, sticky='we')
+
+        Button(search_toplevel, text="Find", underline=0, command=lambda: \
         self.check(
-            search_entry_widget.get())).grid(row=0,\
+            search_entry_widget.get(),'')).grid(row=0,
             column=2, sticky='e' + 'w', padx=2, pady=5)
-        Button(search_toplevel, text="Cancel", underline=0, \
+        
+        Button(search_toplevel, text="Replace All", underline=0, command=lambda: \
+        self.check(
+            search_entry_widget.get(),
+            search_entry_widget1.get())).grid(row=1,
+            column=2, sticky='e' + 'w', padx=2, pady=5)
+        
+        Button(search_toplevel, text="Cancel", underline=0,
             command=lambda: self.find_text_cancel_button(
-            search_toplevel)).grid(row=0, column=4,\
+            search_toplevel)).grid(row=3, column=1,
             sticky='e' + 'w', padx=2, pady=2)
 
     def find_text_cancel_button(self, search_toplevel):
@@ -769,7 +780,9 @@ class TextEditor(tk.Frame):
         self.current_font_size = sz
         self.make_tag()
 
-    def check(self, value):
+    def check(self, value, value1):
+        if value=='':
+            return
         self.text.tag_remove('found', '1.0', END)
         self.text.tag_config('found', background='red')
         list_of_words = value.split(' ')
@@ -777,11 +790,16 @@ class TextEditor(tk.Frame):
             idx = '1.0'
             while idx:
                 idx = self.text.search(word, idx, nocase=1, stopindex=END)
+                print(idx)
                 if idx:
                     lastidx = '%s+%dc' % (idx, len(word))
                     self.text.tag_add('found', idx, lastidx)
                     print(lastidx)
+                    self.text.delete(idx,lastidx)
+                    if value1!='':
+                        self.text.insert(idx,value1)
                     idx = lastidx
+        return
 
     def change_color(self):
         color = colorchooser.askcolor(initialcolor='#ff0000')

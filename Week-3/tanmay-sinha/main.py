@@ -18,7 +18,6 @@ class TextLineNumbers(tk.Canvas):
         self.textwidget = text_widget
 
     def redraw(self, *args):
-        '''redraw line numbers'''
         self.delete("all")
         i = self.textwidget.index("@0,0")
         while True:
@@ -61,7 +60,7 @@ class TextEditor(tk.Frame):
         tk.Frame.__init__(self, *args, **kwargs)
         self.text = CustomText(self)
         self.vsb = tk.Scrollbar(orient="vertical", command=self.text.yview)
-        self.text.configure(yscrollcommand=self.vsb.set,undo=True)
+        self.text.configure(yscrollcommand=self.vsb.set, undo=True)
         self.text.tag_configure("bigfont", font=("Helvetica", "24", "bold"))
         self.linenumbers = TextLineNumbers(self, width=30)
         self.linenumbers.attach(self.text)
@@ -151,7 +150,7 @@ class TextEditor(tk.Frame):
         # save
         self.save_button = Button(name="toolbar_b1", borderwidth=1,
                                   command=self.save, width=20, height=20)
-        self.photo_save = Image.open("icons1/save.png")
+        self.photo_save = Image.open("icons/save.png")
         self.photo_save = self.photo_save.resize((18, 18), Image.ANTIALIAS)
         self.image_save = ImageTk.PhotoImage(self.photo_save)
         self.save_button.config(image=self.image_save)
@@ -169,7 +168,7 @@ class TextEditor(tk.Frame):
         # copy
         self.copy_button = Button(name="toolbar_b4", borderwidth=1,
                                   command=self.copy, width=20, height=20)
-        self.photo_copy = Image.open("icons1/copy.png")
+        self.photo_copy = Image.open("icons/copy.png")
         self.photo_copy = self.photo_copy.resize((18, 18), Image.ANTIALIAS)
         self.image_copy = ImageTk.PhotoImage(self.photo_copy)
         self.copy_button.config(image=self.image_copy)
@@ -177,8 +176,8 @@ class TextEditor(tk.Frame):
 
         # cut
         self.cut_button = Button(name="toolbar_b5", borderwidth=1,
-                            command=self.cut,width=20, height=20)
-        self.photo_cut = Image.open("icons1/cut.png")
+                                 command=self.cut, width=20, height=20)
+        self.photo_cut = Image.open("icons/cut.png")
         self.photo_cut = self.photo_cut.resize((18, 18), Image.ANTIALIAS)
         self.image_cut = ImageTk.PhotoImage(self.photo_cut)
         self.cut_button.config(image=self.image_cut)
@@ -187,7 +186,7 @@ class TextEditor(tk.Frame):
         # paste
         self.paste_button = Button(name="toolbar_b6", borderwidth=1,
                                    command=self.paste, width=20, height=20)
-        self.photo_paste = Image.open("icons1/paste.png")
+        self.photo_paste = Image.open("icons/paste.png")
         self.photo_paste = self.photo_paste.resize((18, 18), Image.ANTIALIAS)
         self.image_paste = ImageTk.PhotoImage(self.photo_paste)
         self.paste_button.config(image=self.image_paste)
@@ -196,7 +195,7 @@ class TextEditor(tk.Frame):
         # redo
         self.redo_button = Button(name="toolbar_b7", borderwidth=1,
                                   command=self.redo, width=20, height=20)
-        self.photo_redo = Image.open("icons1/redo.png")
+        self.photo_redo = Image.open("icons/redo.png")
         self.photo_redo = self.photo_redo.resize((18, 18), Image.ANTIALIAS)
         self.image_redo = ImageTk.PhotoImage(self.photo_redo)
         self.redo_button.config(image=self.image_redo)
@@ -205,7 +204,7 @@ class TextEditor(tk.Frame):
         # undo
         self.undo_button = Button(name="toolbar_b8", borderwidth=1,
                                   command=self.undo, width=20, height=20)
-        self.photo_undo = Image.open("icons1/undo.png")
+        self.photo_undo = Image.open("icons/undo.png")
         self.photo_undo = self.photo_undo.resize((18, 18), Image.ANTIALIAS)
         self.image_undo = ImageTk.PhotoImage(self.photo_undo)
         self.undo_button.config(image=self.image_undo)
@@ -236,7 +235,7 @@ class TextEditor(tk.Frame):
         file_menu.add_command(label="Save", command=self.save, compound='left',
                 image=self.image_save, accelerator='Ctrl+S', underline=0)
         file_menu.add_command(label="Save As", command=self.save_as,
-                              accelerator='Ctrl+Shift+S', underline=1)
+                accelerator='Ctrl+Shift+S', underline=1)
         file_menu.add_separator()
         file_menu.add_command(label="Close", command=self.close,
                               accelerator='Alt+F4', underline=0)
@@ -258,7 +257,7 @@ class TextEditor(tk.Frame):
         edit_menu.add_command(label="Delete", command=self.delete, underline=0)
         edit_menu.add_separator()
         edit_menu.add_command(label="Select All", command=self.select_all,
-                              accelerator='Ctrl+A', underline=0)
+                accelerator='Ctrl+A', underline=0)
         edit_menu.add_command(
             label="Clear All", command=self.delete_all, underline=6)
 
@@ -306,9 +305,9 @@ class TextEditor(tk.Frame):
         self.font_menu.pack(in_=self.formattingbar,
                             side="left", padx=4, pady=4)
         self.font_menu['values'] = ('Courier', 'Helvetica', 'Liberation Mono',
-         'OpenSymbol', 'Century Schoolbook L', 'DejaVu Sans Mono',
-        'Ubuntu Condensed', 'Ubuntu Mono', 'Mukti Narrow', 
-        'Symbola', 'Abyssinica SIL')
+                    'OpenSymbol', 'Century Schoolbook L', 'DejaVu Sans Mono',
+                    'Ubuntu Condensed', 'Ubuntu Mono', 'Mukti Narrow',
+                                    'Symbola', 'Abyssinica SIL')
         self.font_menu.bind('<<ComboboxSelected>>', self.change_font)
         self.font_menu.current(2)
 
@@ -348,7 +347,7 @@ class TextEditor(tk.Frame):
 
         # underline
         self.underline_button = Button(
-            name="formatbar_b3", borderwidth=1,\
+            name="formatbar_b3", borderwidth=1,
             command=self.underline, width=20, height=20)
         self.photo_underline = Image.open("icons/underline.png")
         self.photo_underline = self.photo_underline.resize(
@@ -370,7 +369,8 @@ class TextEditor(tk.Frame):
 
         # font_color
         self.font_color_button = Button(
-            name="formatbar_b5", borderwidth=1, command=self.change_color, width=20, height=20)
+            name="formatbar_b5", borderwidth=1,
+            command=self.change_color, width=20, height=20)
         self.photo_font_color = Image.open("icons/font-color.png")
         self.photo_font_color = self.photo_font_color.resize(
             (18, 18), Image.ANTIALIAS)
@@ -381,8 +381,8 @@ class TextEditor(tk.Frame):
 
         # highlight
         self.highlight_button = Button(
-            name="formatbar_b6", borderwidth=1,\
-             command=self.highlight, width=20, height=20)
+            name="formatbar_b6", borderwidth=1,
+            command=self.highlight, width=20, height=20)
         self.photo_highlight = Image.open("icons/highlight.png")
         self.photo_highlight = self.photo_highlight.resize(
             (18, 18), Image.ANTIALIAS)
@@ -393,8 +393,8 @@ class TextEditor(tk.Frame):
 
         # align_center
         self.align_center_button = Button(
-            name="formatbar_b7", borderwidth=1,\
-             command=self.align_center, width=20, height=20)
+            name="formatbar_b7", borderwidth=1,
+            command=self.align_center, width=20, height=20)
         self.photo_align_center = Image.open("icons/align-center.png")
         self.photo_align_center = self.photo_align_center.resize(
             (18, 18), Image.ANTIALIAS)
@@ -405,7 +405,7 @@ class TextEditor(tk.Frame):
 
         # align_justify
         self.align_justify_button = Button(
-            name="formatbar_b8", borderwidth=1,\
+            name="formatbar_b8", borderwidth=1,
             command=self.align_justify, width=20, height=20)
         self.photo_align_justify = Image.open("icons/align-justify.png")
         self.photo_align_justify = self.photo_align_justify.resize(
@@ -417,8 +417,8 @@ class TextEditor(tk.Frame):
 
         # align_left
         self.align_left_button = Button(
-            name="formatbar_b9", borderwidth=1,\
-             command=self.align_left, width=20, height=20)
+            name="formatbar_b9", borderwidth=1,
+            command=self.align_left, width=20, height=20)
         self.photo_align_left = Image.open("icons/align-left.png")
         self.photo_align_left = self.photo_align_left.resize(
             (18, 18), Image.ANTIALIAS)
@@ -429,7 +429,7 @@ class TextEditor(tk.Frame):
 
         # align_right
         self.align_right_button = Button(
-            name="formatbar_b10", borderwidth=1,\
+            name="formatbar_b10", borderwidth=1,
             command=self.align_right, width=20, height=20)
         self.photo_align_right = Image.open("icons/align-right.png")
         self.photo_align_right = self.photo_align_right.resize(
@@ -440,6 +440,8 @@ class TextEditor(tk.Frame):
             in_=self.formattingbar, side="left", padx=4, pady=4)
 
         root.protocol("WM_DELETE_WINDOW", self.close)
+
+
         self.status_bar = Label(root, text="", bd=1, relief=SUNKEN, anchor=W)
         self.formattingbar.pack(side="top", fill="x")
         self.status_bar.pack(side="bottom", fill="both", expand=True)
@@ -497,15 +499,18 @@ class TextEditor(tk.Frame):
         self.align_justify_button.bind("<Leave>", self.on_leave)
 
         self.align_left_button.bind("<Enter>", lambda event,
-                str="Align Left, Command - Control-Shift-L": self.on_enter(event, str))
+                str="Align Left, Command - Control-Shift-L":
+                self.on_enter(event, str))
         self.align_left_button.bind("<Leave>", self.on_leave)
 
         self.align_right_button.bind("<Enter>", lambda event,
-                str="Align Right, Command - Control-Shift-R": self.on_enter(event, str))
+                str="Align Right, Command - Control-Shift-R":
+                self.on_enter(event, str))
         self.align_right_button.bind("<Leave>", self.on_leave)
 
         self.align_center_button.bind("<Enter>", lambda event,
-                str="Align Center, Command - Control-Shift-C": self.on_enter(event, str))
+                    str="Align Center, Command - Control-Shift-C":
+                    self.on_enter(event, str))
         self.align_center_button.bind("<Leave>", self.on_leave)
 
         self.strike_button.bind("<Enter>", lambda event,
@@ -513,7 +518,7 @@ class TextEditor(tk.Frame):
         self.strike_button.bind("<Leave>", self.on_leave)
 
         self.font_color_button.bind("<Enter>", lambda event,
-                        str="Font Color": self.on_enter(event, str))
+                                    str="Font Color": self.on_enter(event, str))
         self.font_color_button.bind("<Leave>", self.on_leave)
 
         self.highlight_button.bind("<Enter>", lambda event,
@@ -566,10 +571,10 @@ class TextEditor(tk.Frame):
             overstrike = 0
         big_font = tkinter.font.Font(self.text, self.text.cget("font"))
         big_font.configure(slant=slant, weight=weight, underline=underline,
-            overstrike=overstrike,\
+            overstrike=overstrike,
             family=self.current_font_family, size=self.current_font_size)
         self.text.tag_config("BigTag", font=big_font,
-                foreground=self.fontColor, background=self.fontBackground)
+            oreground=self.fontColor, background=self.fontBackground)
         if "BigTag" in current_tags:
             self.text.tag_remove("BigTag", 1.0, END)
         self.text.tag_add("BigTag", 1.0, END)
@@ -580,7 +585,7 @@ class TextEditor(tk.Frame):
         self.file_path = file.name
         self.set_title()
         self.text.insert(INSERT, file.read())
-
+        
     def new(self, event=None):
         response = self.save_if_modified()
         if response is not None:
@@ -599,8 +604,8 @@ class TextEditor(tk.Frame):
     def save_as(self, event=None, filepath=None):
         if filepath == None:
             filepath = filedialog.asksaveasfilename(filetypes=(
-                ('Text files', '*.txt'), ('Python files',\
-                 '*.py *.pyw'), ('All files', '*.*')))
+                ('Text files', '*.txt'), ('Python files',
+                '*.py *.pyw'), ('All files', '*.*')))
         try:
             with open(filepath, 'wb') as file_name:
                 text = self.text.get(1.0, END)
@@ -646,7 +651,7 @@ class TextEditor(tk.Frame):
     def redo(self, event=None):
         self.text.event_generate("<<Redo>>")
         return "break"
-        
+
     def select_all(self, event=None):
         self.text.tag_add(SEL, "1.0", END)
         return "break"
@@ -678,21 +683,21 @@ class TextEditor(tk.Frame):
         search_entry_widget1 = Entry(search_toplevel, width=25)
         search_entry_widget1.grid(row=1, column=1, padx=2, pady=2, sticky='we')
 
-        Button(search_toplevel, text="Find", underline=0, command=lambda: \
-        self.check(
-            search_entry_widget.get(),'')).grid(row=0,
-            column=2, sticky='e' + 'w', padx=2, pady=5)
-        
-        Button(search_toplevel, text="Replace All", underline=0, command=lambda: \
-        self.check(
-            search_entry_widget.get(),
-            search_entry_widget1.get())).grid(row=1,
-            column=2, sticky='e' + 'w', padx=2, pady=5)
-        
+        Button(search_toplevel, text="Find", underline=0, command=lambda:
+               self.check(
+                   search_entry_widget.get(), '')).grid(row=0,
+                        column=2, sticky='e' + 'w', padx=2, pady=5)
+
+        Button(search_toplevel, text="Replace All", underline=0, command=lambda:
+               self.check(
+                   search_entry_widget.get(),
+                   search_entry_widget1.get())).grid(row=1,
+                    column=2, sticky='e' + 'w', padx=2, pady=5)
+
         Button(search_toplevel, text="Cancel", underline=0,
-            command=lambda: self.find_text_cancel_button(
-            search_toplevel)).grid(row=3, column=1,
-            sticky='e' + 'w', padx=2, pady=2)
+               command=lambda: self.find_text_cancel_button(
+                   search_toplevel)).grid(row=3, column=1,
+                                          sticky='e' + 'w', padx=2, pady=2)
 
     def find_text_cancel_button(self, search_toplevel):
         self.text.tag_remove('found', '1.0', END)
@@ -781,7 +786,7 @@ class TextEditor(tk.Frame):
         self.make_tag()
 
     def check(self, value, value1):
-        if value=='':
+        if value == '':
             return
         self.text.tag_remove('found', '1.0', END)
         self.text.tag_config('found', background='red')
@@ -795,9 +800,9 @@ class TextEditor(tk.Frame):
                     lastidx = '%s+%dc' % (idx, len(word))
                     self.text.tag_add('found', idx, lastidx)
                     print(lastidx)
-                    self.text.delete(idx,lastidx)
-                    if value1!='':
-                        self.text.insert(idx,value1)
+                    self.text.delete(idx, lastidx)
+                    if value1 != '':
+                        self.text.insert(idx, value1)
                     idx = lastidx
         return
 
@@ -819,8 +824,11 @@ class TextEditor(tk.Frame):
         )
 
     def _on_change(self, event):
+        position=self.text.index(INSERT).split('.')
+        self.status_bar.configure(text=
+        f"Line:{position[0]}, column:{int(position[1])+1}",
+        anchor='e')
         self.linenumbers.redraw()
-
 
 if __name__ == "__main__":
     root = tk.Tk()
